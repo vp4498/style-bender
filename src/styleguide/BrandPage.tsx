@@ -58,7 +58,7 @@ export function BrandPage() {
             'Use the full logo at 24px tall or more; below that, use the symbol alone.',
             'Place it on the brand surface, the page background, or a photo with enough contrast. Never on violet.',
             'Do not recolor, outline, stretch, rotate or add effects. Do not retype the wordmark: it is outlined Bricolage Grotesque ExtraBold.',
-            'Brand colors are for the logo and brand moments only. Components keep the neutral shadcn theme.',
+            'Brand colors are for the logo, brand moments and the primary color in light mode (violet-700). Other components keep the neutral shadcn theme.',
           ]}
         />
       </Section>

@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-19T00:36:13.836Z",
+  "exportedAt": "2026-10-21T01:25:00.000Z",
   "variables": {
     "--neutral-0": {
       "figma": "neutral/0",
@@ -455,7 +455,7 @@
     "--primary": {
       "figma": "surface/primary",
       "light": {
-        "hex": "#171717",
+        "hex": "#6d28d9",
         "alpha": 1
       },
       "dark": {

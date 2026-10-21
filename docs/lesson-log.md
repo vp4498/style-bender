@@ -236,3 +236,11 @@ Putting the tool-cost constraint in the brief up front kept the whole session in
 > Can I create this DS in Figma from the repo I have?
 
 Generating Figma from Git (instead of syncing a kit) starts the two sides at 1:1, so parity only has to catch future drift.
+
+## 2026-10-20: First design change from Figma to code (primary → violet)
+
+**What we did.** Vishal changed `Color → surface/primary → Light` in Figma from `neutral/900` to `violet/700`. A fresh snapshot made `npm run parity` fail with exactly one difference (`--primary`, light: code `#171717`, Figma `#6d28d9`). Following "Git is the source of truth", Claude stopped and asked; Vishal chose Figma. Then: `tokens/light.tokens.json` primary → `{primitive.violet.700}`, `npm run tokens`, re-exported the three renders that show primary (Primary button, Link button, Card), and updated the "components stay neutral" notes in CLAUDE.md and the Brand page.
+
+**Results.** Parity ✔ 1:1, pixel diff ✔, build ✔. White on violet-700 is about 7:1 contrast.
+
+**Worth repeating.** The loop is: change Figma → snapshot → parity shows the diff → a human picks the winner → update tokens → re-export affected renders → commit (the hook re-checks) → push (CI re-checks).

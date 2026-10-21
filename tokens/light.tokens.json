@@ -27,7 +27,7 @@
     },
     "primary": {
       "$type": "color",
-      "$value": "{primitive.neutral.900}"
+      "$value": "{primitive.violet.700}"
     },
     "primary-foreground": {
       "$type": "color",

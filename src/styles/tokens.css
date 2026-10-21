@@ -55,7 +55,7 @@
   --neutral-950: oklch(14.5% 0 0);
   --popover: var(--neutral-0);
   --popover-foreground: var(--neutral-950);
-  --primary: var(--neutral-900);
+  --primary: var(--violet-700);
   --primary-foreground: var(--neutral-50);
   --radius: var(--radius-base);
   --radius-base: 0.625rem;
