@@ -3,7 +3,7 @@
 A small showcase that proves a 1:1 match between a Figma library and a custom coded style guide. The repo doubles as a training demo, so prefer clear, well-explained steps over clever ones.
 
 ## Roles
-- **Design (David in Figma, with Claude):** owns tokens and visual intent.
+- **Design (Vishal in Figma, with Claude):** owns tokens and visual intent. (Forked from relishink/style-bender, where David was the designer.)
 - **Style guide team (engineering):** builds and maintains the coded style guide in this repo.
 - The coded style guide is the only rendered reference. There is no Storybook or other middle layer: Figma is compared directly with the style guide app.
 
@@ -11,15 +11,18 @@ A small showcase that proves a 1:1 match between a Figma library and a custom co
 Vite + React + TypeScript, shadcn/ui (components copied into `src/components/ui`), Tailwind v4 reading CSS variables generated from tokens, and DTCG 2025.10 tokens built with Terrazzo (`terrazzo.config.ts`): `tokens/style-bender.resolver.json` loads primitives, then the light or dark theme.
 
 ## Ground rules
-1. **Git is the source of truth.** When Figma and code disagree, stop and show the diff to David.
-2. **Commit straight to `main`.** No branches or PRs unless David asks. Keep commits small, one concern each.
+1. **Git is the source of truth.** When Figma and code disagree, stop and show the diff to Vishal.
+2. **Commit straight to `main`.** No branches or PRs unless Vishal asks. Keep commits small, one concern each.
 3. **No hard-coded colors, font sizes or spacing in components.** Spacing classes read `--spacing` and `text-xs/sm/base/lg` read the typography tokens, so Tailwind's scale is token-backed. Everything comes from tokens. No Tailwind arbitrary values such as `bg-[#...]`.
    - Colors, radius, spacing and type come from `tokens/` via `src/styles/tokens.css` (generated, never edit by hand). Heading and Text use the typography tokens.
    - Enforced: `npm run check:tokens` (also in the pre-commit hook and CI). Allowed: arbitrary values built only from tokens (`calc(var(--spacing)*…)`), motion mechanics, and hex inside attribute selectors that only target a library's markup (`[stroke='#ccc']]:stroke-border`).
-4. **Show a short plan before each phase and wait for David's OK.**
+4. **Show a short plan before each phase and wait for Vishal's OK.**
 5. **After each working session, append to `docs/lesson-log.md`:** what we did, what broke, the fix, and any prompt that worked well.
 
 ## Figma
+- **File: Style Bender DS** (key `M9ZeLYVYn2E0nQZUybh3UJ`, https://www.figma.com/design/M9ZeLYVYn2E0nQZUybh3UJ), generated from this repo's tokens and components. Collections: Primitives (hidden), Color (Light/Dark, aliases to Primitives), Radius, Spacing; 22 text styles. Every variable's WEB code syntax is its CSS variable, which is how parity links the two.
+- Components in that file (node IDs in `figma-map.json`): Button, Icon Button, Banner, Input, Card, Pagination (+ Number Button, Ellipsis). The ~60 library components and the logo are under `notYetInFigma` in `figma-map.json` and skipped by parity until they are built in this file.
+- Figma quirks in this file: a bound color fill is always 100% opaque, so faded colors (Destructive tint, primary/80 hover) are a child layer "Fill" with layer opacity; focus/error rings are a child "Focus ring" with a 3px outside stroke bound to `--ring-focus` / `--ring-error`.
 - Plan: paid. Still do all Figma reads and writes through `use_figma`, and load the `figma-use` skill first.
 - Never call `get_design_context`, `get_variable_defs`, `get_metadata` or `get_screenshot` without asking.
 - Code Connect is unavailable. Component mappings live in `figma-map.json`.

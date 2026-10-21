@@ -3,7 +3,7 @@ import { Code, ComponentPage, Mono, Rules, Section, Table } from '../ComponentPa
 import { mappingFor } from '../tokens'
 import { text } from '../type'
 
-// One docs page for a library-level component: shadcn code, mapped to the Figma kit and checked by
+// One docs page for a library-level component: shadcn code, mapped to Style Bender DS in Figma and checked by
 // npm run parity (variants and props both ways, radius token). No Figma render or pixel diff.
 export type LibraryEntry = {
   path: string
@@ -52,9 +52,9 @@ export function LibraryPage({ entry }: { entry: LibraryEntry }) {
         Specifications: (
           <>
             <Section title="Figma and code">
-              {!m.figma ? <p style={text('paragraph-normal')}>The free Figma kit has no {entry.name} component, so this one is code only and not part of the parity check.</p> : <>
+              {!m.figma ? <p style={text('paragraph-normal')}>{entry.name} is not built in the Style Bender DS Figma file yet, so it is code only for now and not part of the parity check.</p> : <>
               <p className="mb-4 text-muted-foreground" style={text('paragraph-normal')}>
-                Figma: “{m.figma.componentSet}” on the “{m.figma.page}” page of the kit. Code: {m.code!.file}. npm run parity checks
+                Figma: “{m.figma.componentSet}” on the “{m.figma.page}” page of Style Bender DS. Code: {m.code!.file}. npm run parity checks
                 this mapping in both directions and compares the corner radius token.
               </p>
               {rows.length > 0 ? <Table head={['Figma', 'Code']} rows={rows} /> : <p style={text('paragraph-normal')}>No variants to map.</p>}

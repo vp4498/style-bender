@@ -66,7 +66,7 @@ export function BrandPage() {
       <Section title="Colors">
         <p className="mb-4 text-muted-foreground" style={text('paragraph-normal')}>
           Exact values from the logo, as tokens in tokens/ (violet and ink primitives, brand-* roles). The same names are
-          Figma variables under shadcn colors / brand, and npm run parity checks them.
+          Figma variables under Color / brand, and npm run parity checks them.
         </p>
         <ColorTable tokens={brandColors} />
       </Section>

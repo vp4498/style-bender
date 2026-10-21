@@ -219,3 +219,20 @@ Putting the tool-cost constraint in the brief up front kept the whole session in
 **Fixes (Git wins), Figma updated:** calendar cells radius-sm → radius-md (1,008 instance overrides), Scrollbar thumb → radius-full, vertical Carousel arrows → radius-full, Resizable grip → radius-lg, Sidebar 2nd-level items, group labels and badge → radius-md, chart legend swatch → radius-2xs.
 
 **Worth repeating.** "Keep cranking" worked because each batch ended with the same gate: check:tokens, parity, typecheck, a browser smoke test, then commit. The pre-commit hook makes skipping the gate impossible.
+
+## 2026-10-20: Forked, rebuilt the Figma side in Style Bender DS, and re-pointed the repo
+
+**What we did.** Vishal forked the repo and ran it locally. Instead of reusing the original kit file, Claude generated a new Figma file, Style Bender DS, from this repo: 103 variables (Primitives, Color in Light/Dark, Radius, Spacing, each with WEB code syntax), 22 text styles, and the core components (Button 120 variants, Icon Button 100, Banner, Input, Card, Pagination with its Number Button and Ellipsis), all bound to variables. Then `figma-map.json`, the snapshot script and `parity/figma-snapshot.json` were pointed at the new file, and the renders in `public/figma/` were re-exported from it.
+
+**Results.** `npm run parity`: 224 values and 8 component APIs, 1:1. `npm run visual`: every component passes, 0 to 2% of pixels differing (text anti-aliasing).
+
+**What broke, and the fix.**
+- Binding a color variable to a paint resets its opacity to 100%, so the Destructive tint came out solid red. Fix: a child "Fill" layer bound to the variable, with layer opacity.
+- A spread drop shadow (the CSS `ring-3` equivalent) did not render on transparent buttons. Fix: a child "Focus ring" rectangle with a 3px outside stroke.
+- Underlining the Link hover label underlined every button label, because text formatting is shared through the Label text property. Fix: the four Link / Hover variants keep their own label text (noted in the component description).
+- Neither the cloud workspace nor the desktop VM could download Figma exports (network allowlist). Fix: render with `node.screenshot()` through `use_figma`, which returns the PNG directly.
+
+**Prompt that worked**
+> Can I create this DS in Figma from the repo I have?
+
+Generating Figma from Git (instead of syncing a kit) starts the two sides at 1:1, so parity only has to catch future drift.

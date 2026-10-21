@@ -1,43 +1,8 @@
 {
-  "exportedAt": "2026-10-15T20:25:00.000Z",
+  "exportedAt": "2026-10-19T00:36:13.836Z",
   "variables": {
-    "--radius-sm": {
-      "figma": "radius-sm",
-      "light": 6,
-      "dark": 6
-    },
-    "--radius-md": {
-      "figma": "radius-md",
-      "light": 8,
-      "dark": 8
-    },
-    "--radius": {
-      "figma": "radius-lg (radius)",
-      "light": 10,
-      "dark": 10
-    },
-    "--radius-xl": {
-      "figma": "radius-xl",
-      "light": 14,
-      "dark": 14
-    },
-    "--radius-2xl": {
-      "figma": "radius-2xl",
-      "light": 18,
-      "dark": 18
-    },
-    "--radius-3xl": {
-      "figma": "radius-3xl",
-      "light": 22,
-      "dark": 22
-    },
-    "--radius-4xl": {
-      "figma": "radius-4xl",
-      "light": 26,
-      "dark": 26
-    },
     "--neutral-0": {
-      "figma": "theme/neutrals/0",
+      "figma": "neutral/0",
       "light": {
         "hex": "#ffffff",
         "alpha": 1
@@ -48,7 +13,7 @@
       }
     },
     "--neutral-50": {
-      "figma": "theme/neutrals/50",
+      "figma": "neutral/50",
       "light": {
         "hex": "#fafafa",
         "alpha": 1
@@ -59,7 +24,7 @@
       }
     },
     "--neutral-100": {
-      "figma": "theme/neutrals/100",
+      "figma": "neutral/100",
       "light": {
         "hex": "#f5f5f5",
         "alpha": 1
@@ -70,7 +35,7 @@
       }
     },
     "--neutral-200": {
-      "figma": "theme/neutrals/200",
+      "figma": "neutral/200",
       "light": {
         "hex": "#e5e5e5",
         "alpha": 1
@@ -81,7 +46,7 @@
       }
     },
     "--neutral-300": {
-      "figma": "theme/neutrals/300",
+      "figma": "neutral/300",
       "light": {
         "hex": "#d4d4d4",
         "alpha": 1
@@ -92,7 +57,7 @@
       }
     },
     "--neutral-400": {
-      "figma": "theme/neutrals/400",
+      "figma": "neutral/400",
       "light": {
         "hex": "#a1a1a1",
         "alpha": 1
@@ -103,7 +68,7 @@
       }
     },
     "--neutral-500": {
-      "figma": "theme/neutrals/500",
+      "figma": "neutral/500",
       "light": {
         "hex": "#737373",
         "alpha": 1
@@ -114,7 +79,7 @@
       }
     },
     "--neutral-600": {
-      "figma": "theme/neutrals/600",
+      "figma": "neutral/600",
       "light": {
         "hex": "#525252",
         "alpha": 1
@@ -125,7 +90,7 @@
       }
     },
     "--neutral-700": {
-      "figma": "theme/neutrals/700",
+      "figma": "neutral/700",
       "light": {
         "hex": "#404040",
         "alpha": 1
@@ -136,7 +101,7 @@
       }
     },
     "--neutral-800": {
-      "figma": "theme/neutrals/800",
+      "figma": "neutral/800",
       "light": {
         "hex": "#262626",
         "alpha": 1
@@ -147,7 +112,7 @@
       }
     },
     "--neutral-900": {
-      "figma": "theme/neutrals/900",
+      "figma": "neutral/900",
       "light": {
         "hex": "#171717",
         "alpha": 1
@@ -158,73 +123,18 @@
       }
     },
     "--neutral-950": {
-      "figma": "theme/neutrals/950",
+      "figma": "neutral/950",
       "light": {
         "hex": "#0a0a0a",
         "alpha": 1
       },
       "dark": {
         "hex": "#0a0a0a",
-        "alpha": 1
-      }
-    },
-    "--chart-1": {
-      "figma": "chart colors/chart 1",
-      "light": {
-        "hex": "#d4d4d4",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#d4d4d4",
-        "alpha": 1
-      }
-    },
-    "--chart-2": {
-      "figma": "chart colors/chart 2",
-      "light": {
-        "hex": "#737373",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#737373",
-        "alpha": 1
-      }
-    },
-    "--chart-3": {
-      "figma": "chart colors/chart 3",
-      "light": {
-        "hex": "#525252",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#525252",
-        "alpha": 1
-      }
-    },
-    "--chart-4": {
-      "figma": "chart colors/chart 4",
-      "light": {
-        "hex": "#404040",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#404040",
-        "alpha": 1
-      }
-    },
-    "--chart-5": {
-      "figma": "chart colors/chart 5",
-      "light": {
-        "hex": "#262626",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#262626",
         "alpha": 1
       }
     },
     "--red-400": {
-      "figma": "tw-raw/red/400",
+      "figma": "red/400",
       "light": {
         "hex": "#ff6467",
         "alpha": 1
@@ -235,315 +145,18 @@
       }
     },
     "--red-600": {
-      "figma": "tw-raw/red/600",
+      "figma": "red/600",
       "light": {
         "hex": "#e7000b",
         "alpha": 1
       },
       "dark": {
         "hex": "#e7000b",
-        "alpha": 1
-      }
-    },
-    "--blue-700": {
-      "figma": "tw-raw/blue/700",
-      "light": {
-        "hex": "#1447e6",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#1447e6",
-        "alpha": 1
-      }
-    },
-    "--background": {
-      "figma": "shadcn colors/general/background",
-      "light": {
-        "hex": "#ffffff",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#0a0a0a",
-        "alpha": 1
-      }
-    },
-    "--foreground": {
-      "figma": "shadcn colors/general/foreground",
-      "light": {
-        "hex": "#0a0a0a",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#fafafa",
-        "alpha": 1
-      }
-    },
-    "--primary": {
-      "figma": "shadcn colors/general/primary",
-      "light": {
-        "hex": "#171717",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#e5e5e5",
-        "alpha": 1
-      }
-    },
-    "--primary-foreground": {
-      "figma": "shadcn colors/general/primary foreground",
-      "light": {
-        "hex": "#fafafa",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#171717",
-        "alpha": 1
-      }
-    },
-    "--secondary": {
-      "figma": "shadcn colors/general/secondary",
-      "light": {
-        "hex": "#f5f5f5",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#262626",
-        "alpha": 1
-      }
-    },
-    "--secondary-foreground": {
-      "figma": "shadcn colors/general/secondary foreground",
-      "light": {
-        "hex": "#171717",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#fafafa",
-        "alpha": 1
-      }
-    },
-    "--accent": {
-      "figma": "shadcn colors/general/accent",
-      "light": {
-        "hex": "#f5f5f5",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#262626",
-        "alpha": 1
-      }
-    },
-    "--accent-foreground": {
-      "figma": "shadcn colors/general/accent foreground",
-      "light": {
-        "hex": "#171717",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#fafafa",
-        "alpha": 1
-      }
-    },
-    "--muted": {
-      "figma": "shadcn colors/general/muted",
-      "light": {
-        "hex": "#f5f5f5",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#262626",
-        "alpha": 1
-      }
-    },
-    "--muted-foreground": {
-      "figma": "shadcn colors/general/muted foreground",
-      "light": {
-        "hex": "#737373",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#a1a1a1",
-        "alpha": 1
-      }
-    },
-    "--destructive": {
-      "figma": "shadcn colors/general/destructive",
-      "light": {
-        "hex": "#e7000b",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#ff6467",
-        "alpha": 1
-      }
-    },
-    "--border": {
-      "figma": "shadcn colors/general/border",
-      "light": {
-        "hex": "#e5e5e5",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#ffffff",
-        "alpha": 0.1
-      }
-    },
-    "--input": {
-      "figma": "shadcn colors/general/input",
-      "light": {
-        "hex": "#e5e5e5",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#ffffff",
-        "alpha": 0.15
-      }
-    },
-    "--card": {
-      "figma": "shadcn colors/general/card",
-      "light": {
-        "hex": "#ffffff",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#171717",
-        "alpha": 1
-      }
-    },
-    "--card-foreground": {
-      "figma": "shadcn colors/general/card foreground",
-      "light": {
-        "hex": "#0a0a0a",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#fafafa",
-        "alpha": 1
-      }
-    },
-    "--popover": {
-      "figma": "shadcn colors/general/popover",
-      "light": {
-        "hex": "#ffffff",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#171717",
-        "alpha": 1
-      }
-    },
-    "--popover-foreground": {
-      "figma": "shadcn colors/general/popover foreground",
-      "light": {
-        "hex": "#0a0a0a",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#fafafa",
-        "alpha": 1
-      }
-    },
-    "--ring": {
-      "figma": "shadcn colors/focus/ring",
-      "light": {
-        "hex": "#a1a1a1",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#737373",
-        "alpha": 1
-      }
-    },
-    "--sidebar": {
-      "figma": "shadcn colors/sidebar/sidebar",
-      "light": {
-        "hex": "#fafafa",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#171717",
-        "alpha": 1
-      }
-    },
-    "--sidebar-foreground": {
-      "figma": "shadcn colors/sidebar/sidebar foreground",
-      "light": {
-        "hex": "#0a0a0a",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#fafafa",
-        "alpha": 1
-      }
-    },
-    "--sidebar-accent": {
-      "figma": "shadcn colors/sidebar/sidebar accent",
-      "light": {
-        "hex": "#f5f5f5",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#262626",
-        "alpha": 1
-      }
-    },
-    "--sidebar-accent-foreground": {
-      "figma": "shadcn colors/sidebar/sidebar accent foreground",
-      "light": {
-        "hex": "#171717",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#fafafa",
-        "alpha": 1
-      }
-    },
-    "--sidebar-primary": {
-      "figma": "shadcn colors/sidebar/sidebar primary",
-      "light": {
-        "hex": "#171717",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#1447e6",
-        "alpha": 1
-      }
-    },
-    "--sidebar-primary-foreground": {
-      "figma": "shadcn colors/sidebar/sidebar primary foreground",
-      "light": {
-        "hex": "#fafafa",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#fafafa",
-        "alpha": 1
-      }
-    },
-    "--sidebar-border": {
-      "figma": "shadcn colors/sidebar/sidebar border",
-      "light": {
-        "hex": "#e5e5e5",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#ffffff",
-        "alpha": 0.1
-      }
-    },
-    "--sidebar-ring": {
-      "figma": "shadcn colors/sidebar/sidebar ring",
-      "light": {
-        "hex": "#a1a1a1",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#737373",
         "alpha": 1
       }
     },
     "--blue-400": {
-      "figma": "tw-raw/blue/400",
+      "figma": "blue/400",
       "light": {
         "hex": "#51a2ff",
         "alpha": 1
@@ -554,7 +167,7 @@
       }
     },
     "--blue-600": {
-      "figma": "tw-raw/blue/600",
+      "figma": "blue/600",
       "light": {
         "hex": "#155dfc",
         "alpha": 1
@@ -564,30 +177,19 @@
         "alpha": 1
       }
     },
-    "--amber-400": {
-      "figma": "tw-raw/amber/400",
+    "--blue-700": {
+      "figma": "blue/700",
       "light": {
-        "hex": "#ffba00",
+        "hex": "#1447e6",
         "alpha": 1
       },
       "dark": {
-        "hex": "#ffba00",
-        "alpha": 1
-      }
-    },
-    "--amber-700": {
-      "figma": "tw-raw/amber/700",
-      "light": {
-        "hex": "#bb4d00",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#bb4d00",
+        "hex": "#1447e6",
         "alpha": 1
       }
     },
     "--green-400": {
-      "figma": "tw-raw/green/400",
+      "figma": "green/400",
       "light": {
         "hex": "#05df72",
         "alpha": 1
@@ -598,7 +200,7 @@
       }
     },
     "--green-700": {
-      "figma": "tw-raw/green/700",
+      "figma": "green/700",
       "light": {
         "hex": "#008236",
         "alpha": 1
@@ -608,32 +210,10 @@
         "alpha": 1
       }
     },
-    "--info": {
-      "figma": "shadcn colors/status/info",
+    "--amber-400": {
+      "figma": "amber/400",
       "light": {
-        "hex": "#155dfc",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#51a2ff",
-        "alpha": 1
-      }
-    },
-    "--success": {
-      "figma": "shadcn colors/status/success",
-      "light": {
-        "hex": "#008236",
-        "alpha": 1
-      },
-      "dark": {
-        "hex": "#05df72",
-        "alpha": 1
-      }
-    },
-    "--warning": {
-      "figma": "shadcn colors/status/warning",
-      "light": {
-        "hex": "#bb4d00",
+        "hex": "#ffba00",
         "alpha": 1
       },
       "dark": {
@@ -641,145 +221,38 @@
         "alpha": 1
       }
     },
-    "calc(var(--spacing) * 0.5)": {
-      "figma": "3xs",
-      "light": 2,
-      "dark": 2
+    "--amber-700": {
+      "figma": "amber/700",
+      "light": {
+        "hex": "#bb4d00",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#bb4d00",
+        "alpha": 1
+      }
     },
-    "calc(var(--spacing) * 1)": {
-      "figma": "2xs",
-      "light": 4,
-      "dark": 4
+    "--white-alpha-10": {
+      "figma": "white-alpha/10",
+      "light": {
+        "hex": "#ffffff",
+        "alpha": 0.1
+      },
+      "dark": {
+        "hex": "#ffffff",
+        "alpha": 0.1
+      }
     },
-    "calc(var(--spacing) * 2)": {
-      "figma": "xs",
-      "light": 8,
-      "dark": 8
-    },
-    "calc(var(--spacing) * 3)": {
-      "figma": "sm",
-      "light": 12,
-      "dark": 12
-    },
-    "calc(var(--spacing) * 4)": {
-      "figma": "md",
-      "light": 16,
-      "dark": 16
-    },
-    "calc(var(--spacing) * 5)": {
-      "figma": "lg",
-      "light": 20,
-      "dark": 20
-    },
-    "calc(var(--spacing) * 6)": {
-      "figma": "xl",
-      "light": 24,
-      "dark": 24
-    },
-    "calc(var(--spacing) * 8)": {
-      "figma": "2xl",
-      "light": 32,
-      "dark": 32
-    },
-    "calc(var(--spacing) * 10)": {
-      "figma": "3xl",
-      "light": 40,
-      "dark": 40
-    },
-    "calc(var(--spacing) * 12)": {
-      "figma": "4xl",
-      "light": 48,
-      "dark": 48
-    },
-    "calc(var(--spacing) * 16)": {
-      "figma": "5xl",
-      "light": 64,
-      "dark": 64
-    },
-    "calc(var(--spacing) * 20)": {
-      "figma": "6xl",
-      "light": 80,
-      "dark": 80
-    },
-    "calc(var(--spacing) * 24)": {
-      "figma": "7xl",
-      "light": 96,
-      "dark": 96
-    },
-    "calc(var(--spacing) * 28)": {
-      "figma": "8xl",
-      "light": 112,
-      "dark": 112
-    },
-    "calc(var(--spacing) * 32)": {
-      "figma": "9xl",
-      "light": 128,
-      "dark": 128
-    },
-    "calc(var(--spacing) * 36)": {
-      "figma": "10xl",
-      "light": 144,
-      "dark": 144
-    },
-    "calc(var(--spacing) * 0.75)": {
-      "figma": "out-of-scale/0,75",
-      "light": 3,
-      "dark": 3
-    },
-    "calc(var(--spacing) * 1.375)": {
-      "figma": "out-of-scale/1,375",
-      "light": 5.5,
-      "dark": 5.5
-    },
-    "calc(var(--spacing) * 1.5)": {
-      "figma": "out-of-scale/1,5",
-      "light": 6,
-      "dark": 6
-    },
-    "calc(var(--spacing) * 1.75)": {
-      "figma": "out-of-scale/1,75",
-      "light": 7,
-      "dark": 7
-    },
-    "calc(var(--spacing) * 1.875)": {
-      "figma": "out-of-scale/1,875",
-      "light": 7.5,
-      "dark": 7.5
-    },
-    "calc(var(--spacing) * 2.125)": {
-      "figma": "out-of-scale/2,125",
-      "light": 8.5,
-      "dark": 8.5
-    },
-    "calc(var(--spacing) * 2.25)": {
-      "figma": "out-of-scale/2,25",
-      "light": 9,
-      "dark": 9
-    },
-    "calc(var(--spacing) * 2.375)": {
-      "figma": "out-of-scale/2,375",
-      "light": 9.5,
-      "dark": 9.5
-    },
-    "calc(var(--spacing) * 2.5)": {
-      "figma": "out-of-scale/2,5",
-      "light": 10,
-      "dark": 10
-    },
-    "calc(var(--spacing) * 3.5)": {
-      "figma": "out-of-scale/3,5",
-      "light": 14,
-      "dark": 14
-    },
-    "calc(var(--spacing) * 3.875)": {
-      "figma": "out-of-scale/3,875",
-      "light": 15.5,
-      "dark": 15.5
-    },
-    "calc(var(--spacing) * 1.25)": {
-      "figma": "out-of-scale/5",
-      "light": 5,
-      "dark": 5
+    "--white-alpha-15": {
+      "figma": "white-alpha/15",
+      "light": {
+        "hex": "#ffffff",
+        "alpha": 0.15
+      },
+      "dark": {
+        "hex": "#ffffff",
+        "alpha": 0.15
+      }
     },
     "--ring-alpha-neutral-400-50": {
       "figma": "ring-alpha/neutral-400-50",
@@ -825,45 +298,8 @@
         "alpha": 0.4
       }
     },
-    "--ring-error": {
-      "figma": "shadcn colors/focus/ring error",
-      "light": {
-        "hex": "#e7000b",
-        "alpha": 0.2
-      },
-      "dark": {
-        "hex": "#ff6467",
-        "alpha": 0.4
-      }
-    },
-    "--ring-focus": {
-      "figma": "shadcn colors/focus/ring focus",
-      "light": {
-        "hex": "#a1a1a1",
-        "alpha": 0.5
-      },
-      "dark": {
-        "hex": "#737373",
-        "alpha": 0.5
-      }
-    },
-    "--radius-full": {
-      "figma": "radius-full",
-      "light": 999,
-      "dark": 999
-    },
-    "--radius-xs": {
-      "figma": "out-of-scale/4",
-      "light": 4,
-      "dark": 4
-    },
-    "--radius-2xs": {
-      "figma": "out-of-scale/2",
-      "light": 2,
-      "dark": 2
-    },
     "--violet-50": {
-      "figma": "brand/violet/50",
+      "figma": "violet/50",
       "light": {
         "hex": "#f5f3ff",
         "alpha": 1
@@ -874,7 +310,7 @@
       }
     },
     "--violet-100": {
-      "figma": "brand/violet/100",
+      "figma": "violet/100",
       "light": {
         "hex": "#ede9fe",
         "alpha": 1
@@ -885,7 +321,7 @@
       }
     },
     "--violet-300": {
-      "figma": "brand/violet/300",
+      "figma": "violet/300",
       "light": {
         "hex": "#c4b5fd",
         "alpha": 1
@@ -896,7 +332,7 @@
       }
     },
     "--violet-600": {
-      "figma": "brand/violet/600",
+      "figma": "violet/600",
       "light": {
         "hex": "#7c3aed",
         "alpha": 1
@@ -907,7 +343,7 @@
       }
     },
     "--violet-700": {
-      "figma": "brand/violet/700",
+      "figma": "violet/700",
       "light": {
         "hex": "#6d28d9",
         "alpha": 1
@@ -918,7 +354,7 @@
       }
     },
     "--ink-50": {
-      "figma": "brand/ink/50",
+      "figma": "ink/50",
       "light": {
         "hex": "#faf8ff",
         "alpha": 1
@@ -929,7 +365,7 @@
       }
     },
     "--ink-900": {
-      "figma": "brand/ink/900",
+      "figma": "ink/900",
       "light": {
         "hex": "#1e1433",
         "alpha": 1
@@ -940,7 +376,7 @@
       }
     },
     "--ink-950": {
-      "figma": "brand/ink/950",
+      "figma": "ink/950",
       "light": {
         "hex": "#140b26",
         "alpha": 1
@@ -950,8 +386,404 @@
         "alpha": 1
       }
     },
+    "--background": {
+      "figma": "surface/background",
+      "light": {
+        "hex": "#ffffff",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#0a0a0a",
+        "alpha": 1
+      }
+    },
+    "--foreground": {
+      "figma": "surface/foreground",
+      "light": {
+        "hex": "#0a0a0a",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#fafafa",
+        "alpha": 1
+      }
+    },
+    "--card": {
+      "figma": "surface/card",
+      "light": {
+        "hex": "#ffffff",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#171717",
+        "alpha": 1
+      }
+    },
+    "--card-foreground": {
+      "figma": "surface/card-foreground",
+      "light": {
+        "hex": "#0a0a0a",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#fafafa",
+        "alpha": 1
+      }
+    },
+    "--popover": {
+      "figma": "surface/popover",
+      "light": {
+        "hex": "#ffffff",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#171717",
+        "alpha": 1
+      }
+    },
+    "--popover-foreground": {
+      "figma": "surface/popover-foreground",
+      "light": {
+        "hex": "#0a0a0a",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#fafafa",
+        "alpha": 1
+      }
+    },
+    "--primary": {
+      "figma": "surface/primary",
+      "light": {
+        "hex": "#171717",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#e5e5e5",
+        "alpha": 1
+      }
+    },
+    "--primary-foreground": {
+      "figma": "surface/primary-foreground",
+      "light": {
+        "hex": "#fafafa",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#171717",
+        "alpha": 1
+      }
+    },
+    "--secondary": {
+      "figma": "surface/secondary",
+      "light": {
+        "hex": "#f5f5f5",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#262626",
+        "alpha": 1
+      }
+    },
+    "--secondary-foreground": {
+      "figma": "surface/secondary-foreground",
+      "light": {
+        "hex": "#171717",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#fafafa",
+        "alpha": 1
+      }
+    },
+    "--muted": {
+      "figma": "surface/muted",
+      "light": {
+        "hex": "#f5f5f5",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#262626",
+        "alpha": 1
+      }
+    },
+    "--muted-foreground": {
+      "figma": "surface/muted-foreground",
+      "light": {
+        "hex": "#737373",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#a1a1a1",
+        "alpha": 1
+      }
+    },
+    "--accent": {
+      "figma": "surface/accent",
+      "light": {
+        "hex": "#f5f5f5",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#262626",
+        "alpha": 1
+      }
+    },
+    "--accent-foreground": {
+      "figma": "surface/accent-foreground",
+      "light": {
+        "hex": "#171717",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#fafafa",
+        "alpha": 1
+      }
+    },
+    "--destructive": {
+      "figma": "status/destructive",
+      "light": {
+        "hex": "#e7000b",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#ff6467",
+        "alpha": 1
+      }
+    },
+    "--info": {
+      "figma": "status/info",
+      "light": {
+        "hex": "#155dfc",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#51a2ff",
+        "alpha": 1
+      }
+    },
+    "--success": {
+      "figma": "status/success",
+      "light": {
+        "hex": "#008236",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#05df72",
+        "alpha": 1
+      }
+    },
+    "--warning": {
+      "figma": "status/warning",
+      "light": {
+        "hex": "#bb4d00",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#ffba00",
+        "alpha": 1
+      }
+    },
+    "--border": {
+      "figma": "border/border",
+      "light": {
+        "hex": "#e5e5e5",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#ffffff",
+        "alpha": 0.1
+      }
+    },
+    "--input": {
+      "figma": "border/input",
+      "light": {
+        "hex": "#e5e5e5",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#ffffff",
+        "alpha": 0.15
+      }
+    },
+    "--ring": {
+      "figma": "border/ring",
+      "light": {
+        "hex": "#a1a1a1",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#737373",
+        "alpha": 1
+      }
+    },
+    "--ring-focus": {
+      "figma": "border/ring-focus",
+      "light": {
+        "hex": "#a1a1a1",
+        "alpha": 0.5
+      },
+      "dark": {
+        "hex": "#737373",
+        "alpha": 0.5
+      }
+    },
+    "--ring-error": {
+      "figma": "border/ring-error",
+      "light": {
+        "hex": "#e7000b",
+        "alpha": 0.2
+      },
+      "dark": {
+        "hex": "#ff6467",
+        "alpha": 0.4
+      }
+    },
+    "--chart-1": {
+      "figma": "chart/chart-1",
+      "light": {
+        "hex": "#d4d4d4",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#d4d4d4",
+        "alpha": 1
+      }
+    },
+    "--chart-2": {
+      "figma": "chart/chart-2",
+      "light": {
+        "hex": "#737373",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#737373",
+        "alpha": 1
+      }
+    },
+    "--chart-3": {
+      "figma": "chart/chart-3",
+      "light": {
+        "hex": "#525252",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#525252",
+        "alpha": 1
+      }
+    },
+    "--chart-4": {
+      "figma": "chart/chart-4",
+      "light": {
+        "hex": "#404040",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#404040",
+        "alpha": 1
+      }
+    },
+    "--chart-5": {
+      "figma": "chart/chart-5",
+      "light": {
+        "hex": "#262626",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#262626",
+        "alpha": 1
+      }
+    },
+    "--sidebar": {
+      "figma": "sidebar/sidebar",
+      "light": {
+        "hex": "#fafafa",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#171717",
+        "alpha": 1
+      }
+    },
+    "--sidebar-foreground": {
+      "figma": "sidebar/sidebar-foreground",
+      "light": {
+        "hex": "#0a0a0a",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#fafafa",
+        "alpha": 1
+      }
+    },
+    "--sidebar-primary": {
+      "figma": "sidebar/sidebar-primary",
+      "light": {
+        "hex": "#171717",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#1447e6",
+        "alpha": 1
+      }
+    },
+    "--sidebar-primary-foreground": {
+      "figma": "sidebar/sidebar-primary-foreground",
+      "light": {
+        "hex": "#fafafa",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#fafafa",
+        "alpha": 1
+      }
+    },
+    "--sidebar-accent": {
+      "figma": "sidebar/sidebar-accent",
+      "light": {
+        "hex": "#f5f5f5",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#262626",
+        "alpha": 1
+      }
+    },
+    "--sidebar-accent-foreground": {
+      "figma": "sidebar/sidebar-accent-foreground",
+      "light": {
+        "hex": "#171717",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#fafafa",
+        "alpha": 1
+      }
+    },
+    "--sidebar-border": {
+      "figma": "sidebar/sidebar-border",
+      "light": {
+        "hex": "#e5e5e5",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#ffffff",
+        "alpha": 0.1
+      }
+    },
+    "--sidebar-ring": {
+      "figma": "sidebar/sidebar-ring",
+      "light": {
+        "hex": "#a1a1a1",
+        "alpha": 1
+      },
+      "dark": {
+        "hex": "#737373",
+        "alpha": 1
+      }
+    },
     "--brand": {
-      "figma": "shadcn colors/brand/brand",
+      "figma": "brand/brand",
       "light": {
         "hex": "#6d28d9",
         "alpha": 1
@@ -962,7 +794,7 @@
       }
     },
     "--brand-foreground": {
-      "figma": "shadcn colors/brand/brand-foreground",
+      "figma": "brand/brand-foreground",
       "light": {
         "hex": "#ffffff",
         "alpha": 1
@@ -973,7 +805,7 @@
       }
     },
     "--brand-accent": {
-      "figma": "shadcn colors/brand/brand-accent",
+      "figma": "brand/brand-accent",
       "light": {
         "hex": "#c4b5fd",
         "alpha": 1
@@ -984,7 +816,7 @@
       }
     },
     "--brand-ink": {
-      "figma": "shadcn colors/brand/brand-ink",
+      "figma": "brand/brand-ink",
       "light": {
         "hex": "#1e1433",
         "alpha": 1
@@ -995,7 +827,7 @@
       }
     },
     "--brand-wordmark": {
-      "figma": "shadcn colors/brand/brand-wordmark",
+      "figma": "brand/brand-wordmark",
       "light": {
         "hex": "#6d28d9",
         "alpha": 1
@@ -1006,7 +838,7 @@
       }
     },
     "--brand-surface": {
-      "figma": "shadcn colors/brand/brand-surface",
+      "figma": "brand/brand-surface",
       "light": {
         "hex": "#faf8ff",
         "alpha": 1
@@ -1015,6 +847,136 @@
         "hex": "#140b26",
         "alpha": 1
       }
+    },
+    "--radius-2xs": {
+      "figma": "radius/2xs",
+      "light": 2,
+      "dark": 2
+    },
+    "--radius-xs": {
+      "figma": "radius/xs",
+      "light": 4,
+      "dark": 4
+    },
+    "--radius-sm": {
+      "figma": "radius/sm",
+      "light": 6,
+      "dark": 6
+    },
+    "--radius-md": {
+      "figma": "radius/md",
+      "light": 8,
+      "dark": 8
+    },
+    "--radius": {
+      "figma": "radius/lg",
+      "light": 10,
+      "dark": 10
+    },
+    "--radius-xl": {
+      "figma": "radius/xl",
+      "light": 14,
+      "dark": 14
+    },
+    "--radius-2xl": {
+      "figma": "radius/2xl",
+      "light": 18,
+      "dark": 18
+    },
+    "--radius-3xl": {
+      "figma": "radius/3xl",
+      "light": 22,
+      "dark": 22
+    },
+    "--radius-4xl": {
+      "figma": "radius/4xl",
+      "light": 26,
+      "dark": 26
+    },
+    "--radius-full": {
+      "figma": "radius/full",
+      "light": 999,
+      "dark": 999
+    },
+    "calc(var(--spacing) * 0.5)": {
+      "figma": "spacing/0_5",
+      "light": 2,
+      "dark": 2
+    },
+    "calc(var(--spacing) * 1)": {
+      "figma": "spacing/1",
+      "light": 4,
+      "dark": 4
+    },
+    "calc(var(--spacing) * 1.5)": {
+      "figma": "spacing/1_5",
+      "light": 6,
+      "dark": 6
+    },
+    "calc(var(--spacing) * 2)": {
+      "figma": "spacing/2",
+      "light": 8,
+      "dark": 8
+    },
+    "calc(var(--spacing) * 2.5)": {
+      "figma": "spacing/2_5",
+      "light": 10,
+      "dark": 10
+    },
+    "calc(var(--spacing) * 3)": {
+      "figma": "spacing/3",
+      "light": 12,
+      "dark": 12
+    },
+    "calc(var(--spacing) * 3.5)": {
+      "figma": "spacing/3_5",
+      "light": 14,
+      "dark": 14
+    },
+    "calc(var(--spacing) * 4)": {
+      "figma": "spacing/4",
+      "light": 16,
+      "dark": 16
+    },
+    "calc(var(--spacing) * 5)": {
+      "figma": "spacing/5",
+      "light": 20,
+      "dark": 20
+    },
+    "calc(var(--spacing) * 6)": {
+      "figma": "spacing/6",
+      "light": 24,
+      "dark": 24
+    },
+    "calc(var(--spacing) * 8)": {
+      "figma": "spacing/8",
+      "light": 32,
+      "dark": 32
+    },
+    "calc(var(--spacing) * 10)": {
+      "figma": "spacing/10",
+      "light": 40,
+      "dark": 40
+    },
+    "calc(var(--spacing) * 12)": {
+      "figma": "spacing/12",
+      "light": 48,
+      "dark": 48
+    },
+    "calc(var(--spacing) * 16)": {
+      "figma": "spacing/16",
+      "light": 64,
+      "dark": 64
+    },
+    "calc(var(--spacing) * 20)": {
+      "figma": "spacing/20",
+      "light": 80,
+      "dark": 80
+    },
+    "calc(var(--spacing) * 24)": {
+      "figma": "spacing/24",
+      "light": 96,
+      "dark": 96
     }
   },
   "textStyles": {
@@ -1174,16 +1136,10 @@
     }
   },
   "components": {
-    "1953:29720": {
-      "name": "Button - Nova",
+    "6:242": {
+      "name": "Button",
       "variantCount": 120,
       "options": {
-        "Size": [
-          "Default",
-          "Small",
-          "Large",
-          "Extra small"
-        ],
         "Variant": [
           "Primary",
           "Secondary",
@@ -1191,6 +1147,12 @@
           "Ghost",
           "Destructive",
           "Link"
+        ],
+        "Size": [
+          "Default",
+          "Small",
+          "Large",
+          "Extra small"
         ],
         "State": [
           "Default",
@@ -1209,22 +1171,22 @@
         "token": "--radius"
       }
     },
-    "1953:30428": {
-      "name": "Icon Button - Nova",
+    "6:643": {
+      "name": "Icon Button",
       "variantCount": 100,
       "options": {
-        "Size": [
-          "Default",
-          "Large",
-          "Small",
-          "Extra small"
-        ],
         "Variant": [
           "Primary",
           "Secondary",
           "Outline",
           "Ghost",
           "Destructive"
+        ],
+        "Size": [
+          "Default",
+          "Small",
+          "Large",
+          "Extra small"
         ],
         "State": [
           "Default",
@@ -1243,15 +1205,15 @@
         "token": "--radius"
       }
     },
-    "1953:32858": {
+    "7:45": {
       "name": "Banner",
       "variantCount": 4,
       "options": {
         "Type": [
           "Info",
-          "Error",
           "Success",
-          "Warning"
+          "Warning",
+          "Error"
         ]
       },
       "size": [
@@ -1263,8 +1225,8 @@
         "token": "--radius"
       }
     },
-    "5021:12383": {
-      "name": "Card - Nova - Confirmation",
+    "7:311": {
+      "name": "Card",
       "variantCount": 1,
       "options": {},
       "size": [
@@ -1276,7 +1238,7 @@
         "token": "--radius-2xl"
       }
     },
-    "1962:14050": {
+    "7:334": {
       "name": "Pagination",
       "variantCount": 1,
       "options": {},
@@ -1289,13 +1251,13 @@
         "token": "--radius"
       }
     },
-    "1953:17986": {
-      "name": "Pagination Number Button - Nova",
+    "7:328": {
+      "name": "Pagination Number Button",
       "variantCount": 2,
       "options": {
         "Active": [
-          "On",
-          "Off"
+          "Off",
+          "On"
         ]
       },
       "size": [
@@ -1307,7 +1269,7 @@
         "token": "--radius"
       }
     },
-    "1957:49237": {
+    "7:329": {
       "name": "Pagination Ellipsis",
       "variantCount": 1,
       "options": {},
@@ -1320,7 +1282,7 @@
         "token": "--radius"
       }
     },
-    "5064:12273": {
+    "7:310": {
       "name": "Input",
       "variantCount": 5,
       "options": {
@@ -1339,1338 +1301,6 @@
       "radius": {
         "px": 10,
         "token": "--radius"
-      }
-    },
-    "1953:31170": {
-      "name": "Badge",
-      "variantCount": 10,
-      "options": {
-        "Variant": [
-          "Primary",
-          "Secondary",
-          "Outline",
-          "Ghost",
-          "Destructive"
-        ],
-        "State": [
-          "Default",
-          "Focus"
-        ]
-      },
-      "size": [
-        48,
-        20
-      ],
-      "radius": {
-        "px": 999,
-        "token": "--radius-full"
-      }
-    },
-    "1953:18500": {
-      "name": "Label",
-      "variantCount": 8,
-      "options": {
-        "Layout": [
-          "Inline",
-          "Block"
-        ],
-        "State": [
-          "Default",
-          "Error"
-        ],
-        "Weight": [
-          "Medium",
-          "Normal"
-        ]
-      },
-      "size": [
-        37,
-        20
-      ],
-      "radius": {
-        "px": 0,
-        "token": null
-      }
-    },
-    "1953:14894": {
-      "name": "Separator",
-      "variantCount": 6,
-      "options": {
-        "Spacing": [
-          "Regular",
-          "None",
-          "Spacious"
-        ],
-        "Direction": [
-          "Default",
-          "Vertical"
-        ]
-      },
-      "size": [
-        48,
-        1
-      ],
-      "radius": {
-        "px": 0,
-        "token": null
-      }
-    },
-    "1953:14612": {
-      "name": "Spinner",
-      "variantCount": 4,
-      "options": {
-        "Type": [
-          "Default",
-          "Mirrored"
-        ],
-        "Size": [
-          "Default",
-          "Small"
-        ]
-      },
-      "size": [
-        16,
-        16
-      ],
-      "radius": {
-        "px": 999,
-        "token": "--radius-full",
-        "ellipse": true
-      }
-    },
-    "2255:18110": {
-      "name": "kbd - Nova",
-      "variantCount": 2,
-      "options": {
-        "Style": [
-          "Default",
-          "Alt"
-        ]
-      },
-      "size": [
-        16,
-        20
-      ],
-      "radius": {
-        "px": 6,
-        "token": "--radius-sm"
-      }
-    },
-    "1953:32067": {
-      "name": "Avatar Placeholder",
-      "variantCount": 3,
-      "options": {
-        "Size": [
-          "Default",
-          "Small",
-          "Large"
-        ]
-      },
-      "size": [
-        32,
-        32
-      ],
-      "radius": {
-        "px": 999,
-        "token": "--radius-full"
-      }
-    },
-    "1953:17809": {
-      "name": "Progress - Nova",
-      "variantCount": 13,
-      "options": {
-        "Progress": [
-          "0",
-          "10",
-          "20",
-          "25",
-          "33",
-          "40",
-          "50",
-          "60",
-          "66",
-          "75",
-          "80",
-          "90",
-          "100"
-        ]
-      },
-      "size": [
-        342,
-        4
-      ],
-      "radius": {
-        "px": 999,
-        "token": "--radius-full"
-      }
-    },
-    "1953:26531": {
-      "name": "Checkbox - Nova",
-      "variantCount": 11,
-      "options": {
-        "Checked?": [
-          "False",
-          "True",
-          "Indeterminate"
-        ],
-        "State": [
-          "Default",
-          "Focus",
-          "Error Focus",
-          "Disabled"
-        ]
-      },
-      "size": [
-        16,
-        16
-      ],
-      "radius": {
-        "px": 4,
-        "token": "--radius-xs"
-      }
-    },
-    "1953:13000": {
-      "name": "Switch - Nova",
-      "variantCount": 12,
-      "options": {
-        "Size": [
-          "Default",
-          "Small"
-        ],
-        "State": [
-          "Unchecked focus",
-          "Unchecked",
-          "Checked focus",
-          "Checked",
-          "Unchecked disabled",
-          "Checked disabled"
-        ]
-      },
-      "size": [
-        32,
-        18
-      ],
-      "radius": {
-        "px": 999,
-        "token": "--radius-full"
-      }
-    },
-    "1953:15087": {
-      "name": "Radio - Nova",
-      "variantCount": 8,
-      "options": {
-        "Checked?": [
-          "False",
-          "True"
-        ],
-        "State": [
-          "Default",
-          "Focus",
-          "Error Focus",
-          "Disabled"
-        ]
-      },
-      "size": [
-        16,
-        16
-      ],
-      "radius": {
-        "px": 999,
-        "token": "--radius-full",
-        "ellipse": true
-      }
-    },
-    "1953:11724": {
-      "name": "Textarea - Nova",
-      "variantCount": 7,
-      "options": {
-        "State": [
-          "Empty",
-          "Placeholder",
-          "Value",
-          "Focus",
-          "Error",
-          "Error Focus",
-          "Disabled"
-        ]
-      },
-      "size": [
-        320,
-        76
-      ],
-      "radius": {
-        "px": 10,
-        "token": "--radius"
-      }
-    },
-    "1957:49264": {
-      "name": "Skeleton / Placeholder Line",
-      "variantCount": 1,
-      "options": {},
-      "size": [
-        260,
-        16
-      ],
-      "radius": {
-        "px": 8,
-        "token": "--radius-md"
-      }
-    },
-    "1953:33091": {
-      "name": "Line Accordion Trigger - Nova",
-      "variantCount": 5,
-      "options": {
-        "State": [
-          "Closed",
-          "Open",
-          "Focus",
-          "Hover",
-          "Disabled"
-        ]
-      },
-      "size": [
-        480,
-        44
-      ],
-      "radius": {
-        "px": 0,
-        "token": null
-      }
-    },
-    "1953:31310": {
-      "name": "Aspect Ratio",
-      "variantCount": 4,
-      "options": {
-        "Aspect": [
-          "16:9",
-          "1:1",
-          "9:16",
-          "21:9"
-        ]
-      },
-      "size": [
-        400,
-        225
-      ],
-      "radius": {
-        "px": 10,
-        "token": "--radius"
-      }
-    },
-    "1962:13741": {
-      "name": "Breadcrumb",
-      "variantCount": 1,
-      "options": {},
-      "size": [
-        383,
-        20
-      ],
-      "radius": {
-        "px": 0,
-        "token": null
-      }
-    },
-    "1953:27724": {
-      "name": "Button Group Button - Nova",
-      "variantCount": 192,
-      "options": {
-        "Variant": [
-          "Outline",
-          "Ghost"
-        ],
-        "Size": [
-          "Default",
-          "Large",
-          "Small",
-          "Extra small"
-        ],
-        "Position": [
-          "Left",
-          "Middle",
-          "Right",
-          "Single",
-          "Top",
-          "Bottom"
-        ],
-        "State": [
-          "Default",
-          "Focus",
-          "Hover",
-          "Disabled"
-        ]
-      },
-      "size": [
-        57,
-        32
-      ],
-      "radius": {
-        "px": 10,
-        "token": "--radius"
-      }
-    },
-    "1953:13582": {
-      "name": "Select & Combobox - Nova",
-      "variantCount": 72,
-      "options": {
-        "Size": [
-          "Default",
-          "Large",
-          "Small",
-          "Extra small"
-        ],
-        "State": [
-          "Placeholder",
-          "Default",
-          "Focus",
-          "Error focus",
-          "Disabled",
-          "Error"
-        ],
-        "Lines": [
-          "1 Line",
-          "2 Lines",
-          "2 Lines Alt"
-        ]
-      },
-      "size": [
-        320,
-        32
-      ],
-      "radius": {
-        "px": 10,
-        "token": "--radius"
-      }
-    },
-    "1953:14453": {
-      "name": "Slider Horizontal - Nova",
-      "variantCount": 6,
-      "options": {
-        "Type": [
-          "Default",
-          "Range Narrow",
-          "Range Wide"
-        ],
-        "State": [
-          "Active",
-          "Disabled"
-        ]
-      },
-      "size": [
-        240,
-        16
-      ],
-      "radius": {
-        "px": 999,
-        "token": "--radius-full"
-      }
-    },
-    "1953:12862": {
-      "name": "Basic Table Cell - Nova",
-      "variantCount": 4,
-      "options": {
-        "Parity": [
-          "Odd",
-          "Even"
-        ],
-        "Alignment": [
-          "Right",
-          "Left"
-        ]
-      },
-      "size": [
-        240,
-        38
-      ],
-      "radius": {
-        "px": 0,
-        "token": null
-      }
-    },
-    "1953:12386": {
-      "name": "Tabs (segmented) - Nova",
-      "variantCount": 3,
-      "options": {
-        "Size": [
-          "Default",
-          "Large",
-          "Small"
-        ]
-      },
-      "size": [
-        94,
-        26
-      ],
-      "radius": {
-        "px": 10,
-        "token": "--radius"
-      }
-    },
-    "1999:10837": {
-      "name": "Toggle Button - Nova",
-      "variantCount": 192,
-      "options": {
-        "Skin": [
-          "Outline",
-          "Ghost"
-        ],
-        "Size": [
-          "Default",
-          "Large",
-          "Small",
-          "Extra small"
-        ],
-        "Position": [
-          "Left",
-          "Middle",
-          "Right",
-          "Single"
-        ],
-        "Active?": [
-          "Yes",
-          "No"
-        ],
-        "State": [
-          "Default",
-          "Disabled",
-          "Focus"
-        ]
-      },
-      "size": [
-        57,
-        32
-      ],
-      "radius": {
-        "px": 10,
-        "token": "--radius"
-      }
-    },
-    "1953:11601": {
-      "name": "Tooltip - Nova",
-      "variantCount": 12,
-      "options": {
-        "Side": [
-          "Top",
-          "Bottom",
-          "Left",
-          "Right"
-        ],
-        "Type": [
-          "Default",
-          "Formatted",
-          "Shortcut"
-        ]
-      },
-      "size": [
-        78,
-        28
-      ],
-      "radius": {
-        "px": 8,
-        "token": "--radius-md"
-      }
-    },
-    "1953:22846": {
-      "name": "Dialog - Nova",
-      "variantCount": 4,
-      "options": {
-        "Type": [
-          "Desktop scrollable",
-          "Desktop",
-          "Mobile",
-          "Mobile full Screen scrollable"
-        ]
-      },
-      "size": [
-        390,
-        480
-      ],
-      "radius": {
-        "px": 14,
-        "token": "--radius-xl"
-      }
-    },
-    "1953:32398": {
-      "name": "Alert Dialog - Nova",
-      "variantCount": 4,
-      "options": {
-        "Size": [
-          "Regular",
-          "Small"
-        ],
-        "Variant": [
-          "Destructive",
-          "Regular"
-        ]
-      },
-      "size": [
-        340,
-        156
-      ],
-      "radius": {
-        "px": 14,
-        "token": "--radius-xl"
-      }
-    },
-    "1953:14738": {
-      "name": "Sheet",
-      "variantCount": 2,
-      "options": {
-        "Scrollable": [
-          "False",
-          "True"
-        ]
-      },
-      "size": [
-        342,
-        844
-      ],
-      "radius": {
-        "px": 6,
-        "token": "--radius-sm"
-      }
-    },
-    "1962:14345": {
-      "name": "Drawer - Nova",
-      "variantCount": 1,
-      "options": {},
-      "size": [
-        390,
-        300
-      ],
-      "radius": {
-        "px": 14,
-        "token": "--radius-xl"
-      }
-    },
-    "1962:14383": {
-      "name": "Hover Card",
-      "variantCount": 1,
-      "options": {},
-      "size": [
-        200,
-        40
-      ],
-      "radius": {
-        "px": 10,
-        "token": "--radius"
-      }
-    },
-    "1953:21264": {
-      "name": "Dropdown Menu - Nova",
-      "variantCount": 10,
-      "options": {
-        "Spacing": [
-          "None",
-          "2px",
-          "8px",
-          "16px",
-          "24px"
-        ],
-        "Style": [
-          "Default",
-          "Translucent"
-        ]
-      },
-      "size": [
-        200,
-        20
-      ],
-      "radius": {
-        "px": 10,
-        "token": "--radius"
-      }
-    },
-    "2047:14217": {
-      "name": "Menubar - Nova",
-      "variantCount": 1,
-      "options": {},
-      "size": [
-        164,
-        28
-      ],
-      "radius": {
-        "px": 10,
-        "token": "--radius"
-      }
-    },
-    "2078:525": {
-      "name": "Navigation Menu - Nova",
-      "variantCount": 1,
-      "options": {},
-      "size": [
-        416,
-        32
-      ],
-      "radius": {
-        "px": 10,
-        "token": "--radius"
-      }
-    },
-    "1999:15000": {
-      "name": "Command - Nova",
-      "variantCount": 1,
-      "options": {},
-      "size": [
-        480,
-        373
-      ],
-      "radius": {
-        "px": 14,
-        "token": "--radius-xl"
-      }
-    },
-    "2047:14542": {
-      "name": "Sonner - Nova",
-      "variantCount": 12,
-      "options": {
-        "Type": [
-          "1 line",
-          "2 lines"
-        ],
-        "Stack": [
-          "1 Level",
-          "2 Levels",
-          "3 Levels"
-        ],
-        "Order": [
-          "Bottom to Top",
-          "Top to Bottom"
-        ]
-      },
-      "size": [
-        356,
-        52
-      ],
-      "radius": {
-        "px": 10,
-        "token": "--radius"
-      }
-    },
-    "5083:22": {
-      "name": "Symbol",
-      "variantCount": 1,
-      "options": {},
-      "size": [
-        64,
-        64
-      ],
-      "radius": {
-        "px": 0,
-        "token": null
-      }
-    },
-    "5083:23": {
-      "name": "Logo",
-      "variantCount": 1,
-      "options": {},
-      "size": [
-        836,
-        150
-      ],
-      "radius": {
-        "px": 0,
-        "token": null
-      }
-    },
-    "1953:20683": {
-      "name": "Vertical Field - Nova",
-      "variantCount": 12,
-      "options": {
-        "Type": [
-          "Select",
-          "Text Value",
-          "Radio",
-          "Textarea",
-          "Checkbox",
-          "Slider"
-        ],
-        "State": [
-          "Default",
-          "Error"
-        ]
-      },
-      "size": [
-        320,
-        61
-      ],
-      "radius": {
-        "px": 10,
-        "token": "--radius"
-      }
-    },
-    "1953:20777": {
-      "name": "Horizontal Field - Nova",
-      "variantCount": 12,
-      "options": {
-        "Type": [
-          "Select",
-          "Text Value",
-          "Radio",
-          "Textarea",
-          "Checkbox",
-          "Slider"
-        ],
-        "State": [
-          "Default",
-          "Error"
-        ]
-      },
-      "size": [
-        320,
-        36
-      ],
-      "radius": {
-        "px": 10,
-        "token": "--radius"
-      }
-    },
-    "1999:16048": {
-      "name": "Input OTP - Nova",
-      "variantCount": 84,
-      "options": {
-        "State": [
-          "Empty",
-          "Placeholder",
-          "Value",
-          "Focus",
-          "Error",
-          "Error Focus",
-          "Disabled"
-        ],
-        "Position": [
-          "Left",
-          "Middle",
-          "Right"
-        ],
-        "Size": [
-          "Default",
-          "Large",
-          "Small",
-          "Extra small"
-        ]
-      },
-      "size": [
-        32,
-        32
-      ],
-      "radius": {
-        "px": 10,
-        "token": "--radius"
-      }
-    },
-    "1953:14105": {
-      "name": "Multi Combobox - Nova",
-      "variantCount": 16,
-      "options": {
-        "State": [
-          "Empty",
-          "Items",
-          "Focus",
-          "Focus Items"
-        ],
-        "Size": [
-          "Default",
-          "Small",
-          "Large",
-          "Extra small"
-        ]
-      },
-      "size": [
-        272,
-        32
-      ],
-      "radius": {
-        "px": 10,
-        "token": "--radius"
-      }
-    },
-    "1953:14176": {
-      "name": "Multi Combobox Tag",
-      "variantCount": 2,
-      "options": {
-        "State": [
-          "Default",
-          "Hover"
-        ]
-      },
-      "size": [
-        60,
-        20
-      ],
-      "radius": {
-        "px": 6,
-        "token": "--radius-sm"
-      }
-    },
-    "1999:6911": {
-      "name": "Calendar - Nova",
-      "variantCount": 3,
-      "options": {
-        "Months": [
-          "1 Month",
-          "2 Months",
-          "3 Months"
-        ]
-      },
-      "size": [
-        196,
-        259
-      ],
-      "radius": {
-        "px": 8,
-        "token": "--radius-md"
-      }
-    },
-    "1999:6891": {
-      "name": "Date Picker - Nova",
-      "variantCount": 3,
-      "options": {
-        "State": [
-          "Placeholder",
-          "Value",
-          "Focus"
-        ]
-      },
-      "size": [
-        197,
-        32
-      ],
-      "radius": {
-        "px": 10,
-        "token": "--radius"
-      }
-    },
-    "1953:18886": {
-      "name": "Input - Nova",
-      "variantCount": 128,
-      "options": {
-        "Position": [
-          "Default",
-          "Left",
-          "Right",
-          "Middle"
-        ],
-        "Size": [
-          "Regular",
-          "Large",
-          "Small",
-          "Extra small"
-        ],
-        "State": [
-          "Empty",
-          "Placeholder",
-          "Value",
-          "Focus",
-          "Error",
-          "Error Focus",
-          "Disabled",
-          "Error Placeholder"
-        ]
-      },
-      "size": [
-        320,
-        32
-      ],
-      "radius": {
-        "px": 10,
-        "token": "--radius"
-      }
-    },
-    "1999:10197": {
-      "name": "Item - Nova",
-      "variantCount": 27,
-      "options": {
-        "Size": [
-          "Default",
-          "Small",
-          "Extra Small"
-        ],
-        "Variant": [
-          "Default",
-          "Outline",
-          "Muted"
-        ],
-        "Interaction": [
-          "None",
-          "Default",
-          "Hover"
-        ]
-      },
-      "size": [
-        600,
-        64
-      ],
-      "radius": {
-        "px": 10,
-        "token": "--radius"
-      }
-    },
-    "1999:15672": {
-      "name": "Empty - Nova",
-      "variantCount": 4,
-      "options": {
-        "Variant": [
-          "Default",
-          "Outline",
-          "Background",
-          "Outline dashed"
-        ]
-      },
-      "size": [
-        480,
-        268
-      ],
-      "radius": {
-        "px": 14,
-        "token": "--radius-xl"
-      }
-    },
-    "1953:14936": {
-      "name": "Scrollbar",
-      "variantCount": 2,
-      "options": {
-        "Type": [
-          "Vertical",
-          "Horizontal"
-        ]
-      },
-      "size": [
-        48,
-        6
-      ],
-      "radius": {
-        "px": 999,
-        "token": "--radius-full"
-      }
-    },
-    "1953:15016": {
-      "name": "Resizable",
-      "variantCount": 2,
-      "options": {
-        "Orientation": [
-          "Horizontal",
-          "Vertical"
-        ]
-      },
-      "size": [
-        12,
-        200
-      ],
-      "radius": {
-        "px": 10,
-        "token": "--radius"
-      }
-    },
-    "1953:26893": {
-      "name": "Carousel (Horizontal) - Nova",
-      "variantCount": 3,
-      "options": {
-        "Slides": [
-          "1 Slide",
-          "2 Slides",
-          "3 Slides"
-        ]
-      },
-      "size": [
-        342,
-        200
-      ],
-      "radius": {
-        "px": 999,
-        "token": "--radius-full"
-      }
-    },
-    "1953:26931": {
-      "name": "Carousel (Vertical) - Nova",
-      "variantCount": 3,
-      "options": {
-        "Slides": [
-          "1",
-          "2",
-          "3"
-        ]
-      },
-      "size": [
-        400,
-        396
-      ],
-      "radius": {
-        "px": 999,
-        "token": "--radius-full"
-      }
-    },
-    "2047:13506": {
-      "name": "Sidebar Item / Expanded / 1st Level - Nova",
-      "variantCount": 20,
-      "options": {
-        "State": [
-          "Active",
-          "Default",
-          "Focus",
-          "Active Focus"
-        ],
-        "Type": [
-          "Base",
-          "Expanded",
-          "Collapsed",
-          "Dropdown",
-          "Badge"
-        ]
-      },
-      "size": [
-        160,
-        32
-      ],
-      "radius": {
-        "px": 8,
-        "token": "--radius-md"
-      }
-    },
-    "2047:13456": {
-      "name": "Sidebar Item / Collapsed - Nova",
-      "variantCount": 2,
-      "options": {
-        "State": [
-          "Regular",
-          "Active"
-        ]
-      },
-      "size": [
-        36,
-        36
-      ],
-      "radius": {
-        "px": 8,
-        "token": "--radius-md"
-      }
-    },
-    "2047:13613": {
-      "name": "Sidebar Item / Expanded / 2nd Level - Nova",
-      "variantCount": 2,
-      "options": {
-        "State": [
-          "Default",
-          "Active"
-        ]
-      },
-      "size": [
-        160,
-        32
-      ],
-      "radius": {
-        "px": 8,
-        "token": "--radius-md"
-      }
-    },
-    "2047:13640": {
-      "name": "Sidebar Group Label - Nova",
-      "variantCount": 4,
-      "options": {
-        "Type": [
-          "Base",
-          "Action",
-          "Expanded",
-          "Collapsed"
-        ]
-      },
-      "size": [
-        160,
-        32
-      ],
-      "radius": {
-        "px": 8,
-        "token": "--radius-md"
-      }
-    },
-    "2047:13471": {
-      "name": "Sidebar Badge - Nova",
-      "variantCount": 2,
-      "options": {
-        "Variant": [
-          "Default",
-          "Primary"
-        ]
-      },
-      "size": [
-        22,
-        22
-      ],
-      "radius": {
-        "px": 8,
-        "token": "--radius-md"
-      }
-    },
-    "2351:3044": {
-      "name": "Sidebar - With Children",
-      "variantCount": 1,
-      "options": {},
-      "size": [
-        240,
-        800
-      ],
-      "radius": {
-        "px": 8,
-        "token": "--radius-md"
-      }
-    },
-    "2351:3048": {
-      "name": "Sidebar - Collapsed",
-      "variantCount": 1,
-      "options": {},
-      "size": [
-        52,
-        800
-      ],
-      "radius": {
-        "px": 8,
-        "token": "--radius-md"
-      }
-    },
-    "1999:12790": {
-      "name": "Chart",
-      "variantCount": 1,
-      "options": {},
-      "size": [
-        768,
-        400
-      ],
-      "radius": {
-        "px": 6,
-        "token": "--radius-sm"
-      }
-    },
-    "1999:13022": {
-      "name": "Legend",
-      "variantCount": 1,
-      "options": {},
-      "size": [
-        117,
-        16
-      ],
-      "radius": {
-        "px": 2,
-        "token": "--radius-2xs"
-      }
-    },
-    "1999:13135": {
-      "name": "Line chart",
-      "variantCount": 5,
-      "options": {
-        "Type": [
-          "Default",
-          "Interactive",
-          "Linear",
-          "Multiple",
-          "Step"
-        ]
-      },
-      "size": [
-        548.9928588867188,
-        157.2807159423828
-      ],
-      "radius": {
-        "px": 0,
-        "token": null
-      }
-    },
-    "1999:13167": {
-      "name": "Area chart",
-      "variantCount": 5,
-      "options": {
-        "Type": [
-          "Interactive",
-          "Linear",
-          "Default",
-          "Step",
-          "Stacked"
-        ]
-      },
-      "size": [
-        438.28570556640625,
-        115.1515121459961
-      ],
-      "radius": {
-        "px": 0,
-        "token": null
-      }
-    },
-    "1999:13206": {
-      "name": "Bar chart",
-      "variantCount": 5,
-      "options": {
-        "Type": [
-          "Interactive",
-          "Default",
-          "Horizontal",
-          "Multiple",
-          "Stacked"
-        ]
-      },
-      "size": [
-        424.0444641113281,
-        114.89612579345703
-      ],
-      "radius": {
-        "px": 0,
-        "token": null
-      }
-    },
-    "1999:9214": {
-      "name": "Table Header",
-      "variantCount": 24,
-      "options": {
-        "Content": [
-          "Text",
-          "Sortable",
-          "Checkbox",
-          "Empty"
-        ],
-        "Alignment": [
-          "Left",
-          "Right"
-        ],
-        "State": [
-          "Default",
-          "Hover",
-          "Active"
-        ]
-      },
-      "size": [
-        200,
-        36
-      ],
-      "radius": {
-        "px": 0,
-        "token": null
-      }
-    },
-    "1999:9349": {
-      "name": "Table Cell",
-      "variantCount": 24,
-      "options": {
-        "Content": [
-          "Text (1 Line)",
-          "Text (2 Lines)",
-          "Checkbox",
-          "Slot"
-        ],
-        "Alignment": [
-          "Left",
-          "Right"
-        ],
-        "State": [
-          "Default",
-          "Hover",
-          "Active"
-        ]
-      },
-      "size": [
-        200,
-        35
-      ],
-      "radius": {
-        "px": 0,
-        "token": null
       }
     }
   }

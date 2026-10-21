@@ -1,12 +1,12 @@
 {
-  "$description": "Maps Figma component sets to code components (stands in for Code Connect). Figma file: shadcn/ui kit Community Edition (copy), key uvAxakxuZjwClmZjLL9ca3. npm run parity checks every mapping in both directions.",
+  "$description": "Maps Figma component sets to code components (stands in for Code Connect). Figma file: Style Bender DS, key M9ZeLYVYn2E0nQZUybh3UJ (https://www.figma.com/design/M9ZeLYVYn2E0nQZUybh3UJ). npm run parity checks every mapping in components in both directions.",
   "components": [
     {
       "name": "Button",
       "figma": {
-        "componentSet": "Button - Nova",
-        "nodeId": "1953:29720",
-        "page": "Button & Icon Button •"
+        "componentSet": "Button",
+        "nodeId": "6:242",
+        "page": "Button"
       },
       "code": {
         "file": "src/components/ui/button.tsx",
@@ -54,9 +54,9 @@
     {
       "name": "Icon Button",
       "figma": {
-        "componentSet": "Icon Button - Nova",
-        "nodeId": "1953:30428",
-        "page": "Button & Icon Button •"
+        "componentSet": "Icon Button",
+        "nodeId": "6:643",
+        "page": "Button"
       },
       "code": {
         "file": "src/components/ui/button.tsx",
@@ -107,8 +107,8 @@
       "name": "Banner",
       "figma": {
         "componentSet": "Banner",
-        "nodeId": "1953:32858",
-        "page": "Alert •"
+        "nodeId": "7:45",
+        "page": "Banner"
       },
       "code": {
         "file": "src/components/ui/banner.tsx",
@@ -127,18 +127,17 @@
       },
       "otherProperties": {
         "Title (text)": "title",
-        "⮑  Description (text) + Show Description": "description",
+        "Description (text) + Show Description": "description",
         "Show Button": "action (pass a <Button size=\"xs\" variant=\"outline\">)",
-        "⮑ Icon": "fixed per variant in code (Info, CircleCheck, TriangleAlert, CircleAlert)",
-        "Show Title": "not supported in code: a banner always has a title"
+        "Icon": "fixed per Type, as in code (Info, CircleCheck, TriangleAlert, CircleAlert)"
       }
     },
     {
       "name": "Card",
       "figma": {
-        "componentSet": "Card - Nova - Confirmation",
-        "nodeId": "5021:12383",
-        "page": "Card •"
+        "componentSet": "Card",
+        "nodeId": "7:311",
+        "page": "Card"
       },
       "code": {
         "file": "src/components/ui/card.tsx",
@@ -146,17 +145,17 @@
       },
       "props": {},
       "parts": {
-        "Header (.Card Section - Nova)": "CardHeader with CardTitle (paragraph/bold) and CardDescription (paragraph small/normal)",
-        "Body": "CardContent",
-        "Footer (.Dialog Footer - Nova, 2 buttons right)": "CardFooter with <Button variant=\"outline\"> and <Button>"
+        "Header (Title, Description)": "CardHeader with CardTitle (paragraph/bold) and CardDescription (paragraph small/normal)",
+        "Content": "CardContent",
+        "Footer (Button instances: Outline + Primary, right)": "CardFooter with <Button variant=\"outline\"> and <Button>"
       }
     },
     {
       "name": "Pagination",
       "figma": {
         "componentSet": "Pagination",
-        "nodeId": "1962:14050",
-        "page": "Pagination •"
+        "nodeId": "7:334",
+        "page": "Pagination"
       },
       "code": {
         "file": "src/components/ui/pagination.tsx",
@@ -164,9 +163,8 @@
       },
       "props": {},
       "parts": {
-        "Pages (slot)": "<PaginationContent> with <PaginationItem>s",
-        "Button - Nova, Ghost (Previous / Next)": "<PaginationPrevious> / <PaginationNext>",
-        "Pagination Number Button": "<PaginationLink isActive>",
+        "Previous / Next (Button, Ghost)": "<PaginationPrevious> / <PaginationNext>",
+        "Page N (Pagination Number Button)": "<PaginationLink isActive>",
         "Pagination Ellipsis": "<PaginationEllipsis>"
       },
       "skipRadius": "built from our Button (code) and Button - Nova (Figma); the radius is checked under Button and by the pixel diff"
@@ -174,9 +172,9 @@
     {
       "name": "Pagination Number Button",
       "figma": {
-        "componentSet": "Pagination Number Button - Nova",
-        "nodeId": "1953:17986",
-        "page": "Pagination •"
+        "componentSet": "Pagination Number Button",
+        "nodeId": "7:328",
+        "page": "Pagination"
       },
       "code": {
         "file": "src/components/ui/pagination.tsx",
@@ -198,8 +196,8 @@
       "name": "Pagination Ellipsis",
       "figma": {
         "componentSet": "Pagination Ellipsis",
-        "nodeId": "1957:49237",
-        "page": "Pagination •"
+        "nodeId": "7:329",
+        "page": "Pagination"
       },
       "code": {
         "file": "src/components/ui/pagination.tsx",
@@ -212,8 +210,8 @@
       "name": "Input",
       "figma": {
         "componentSet": "Input",
-        "nodeId": "5064:12273",
-        "page": "Input (style-bender)"
+        "nodeId": "7:310",
+        "page": "Input"
       },
       "code": {
         "file": "src/components/ui/input.tsx",
@@ -233,1426 +231,1431 @@
       "otherProperties": {
         "Placeholder (text)": "placeholder"
       },
-      "origin": "Generated in Figma from code (code first)."
-    },
-    {
-      "name": "Badge",
-      "figma": {
-        "componentSet": "Badge",
-        "nodeId": "1953:31170",
-        "page": "Badge"
-      },
-      "code": {
-        "file": "src/components/ui/badge.tsx",
-        "export": "Badge"
-      },
-      "props": {
-        "variant": {
-          "figmaProperty": "Variant",
-          "values": {
-            "Primary": "default",
-            "Secondary": "secondary",
-            "Outline": "outline",
-            "Ghost": "ghost",
-            "Destructive": "destructive"
-          },
-          "codeOnly": [
-            "link"
-          ]
-        }
-      },
-      "states": {
-        "figmaProperty": "State",
-        "values": {
-          "Default": "rest",
-          "Focus": ":focus-visible"
-        }
-      },
-      "level": "library"
-    },
-    {
-      "name": "Label",
-      "figma": {
-        "componentSet": "Label",
-        "nodeId": "1953:18500",
-        "page": "Label"
-      },
-      "code": {
-        "file": "src/components/ui/label.tsx",
-        "export": "Label"
-      },
-      "props": {},
-      "figmaOnly": {
-        "Layout": "layout of the surrounding form",
-        "State": "Error = text-destructive on the label",
-        "Weight": "font-medium / font-normal class"
-      },
-      "level": "library"
-    },
-    {
-      "name": "Separator",
-      "figma": {
-        "componentSet": "Separator",
-        "nodeId": "1953:14894",
-        "page": "Separator"
-      },
-      "code": {
-        "file": "src/components/ui/separator.tsx",
-        "export": "Separator"
-      },
-      "props": {
-        "orientation": {
-          "figmaProperty": "Direction",
-          "kind": "prop",
-          "values": {
-            "Default": "horizontal",
-            "Vertical": "vertical"
-          }
-        }
-      },
-      "figmaOnly": {
-        "Spacing": "margin from the surrounding layout"
-      },
-      "level": "library"
-    },
-    {
-      "name": "Skeleton",
-      "figma": {
-        "componentSet": "Skeleton / Placeholder Line",
-        "nodeId": "1957:49264",
-        "page": "Skeleton"
-      },
-      "code": {
-        "file": "src/components/ui/skeleton.tsx",
-        "export": "Skeleton"
-      },
-      "props": {},
-      "level": "library"
-    },
-    {
-      "name": "Spinner",
-      "figma": {
-        "componentSet": "Spinner",
-        "nodeId": "1953:14612",
-        "page": "Spinner"
-      },
-      "code": {
-        "file": "src/components/ui/spinner.tsx",
-        "export": "Spinner"
-      },
-      "props": {},
-      "figmaOnly": {
-        "Type": "Mirrored is a rotated copy",
-        "Size": "size-3 / size-4 class"
-      },
-      "level": "library",
-      "skipRadius": "a Lucide loader icon in code and a circle in Figma; no corner radius to compare"
-    },
-    {
-      "name": "Kbd",
-      "figma": {
-        "componentSet": "kbd - Nova",
-        "nodeId": "2255:18110",
-        "page": "Kbd •"
-      },
-      "code": {
-        "file": "src/components/ui/kbd.tsx",
-        "export": "Kbd"
-      },
-      "props": {},
-      "figmaOnly": {
-        "Style": "Alt = inside a tooltip (in-data-[slot=tooltip-content])"
-      },
-      "level": "library"
-    },
-    {
-      "name": "Avatar",
-      "figma": {
-        "componentSet": "Avatar Placeholder",
-        "nodeId": "1953:32067",
-        "page": "Avatar"
-      },
-      "code": {
-        "file": "src/components/ui/avatar.tsx",
-        "export": "Avatar"
-      },
-      "props": {
-        "size": {
-          "figmaProperty": "Size",
-          "kind": "prop",
-          "checkValues": true,
-          "values": {
-            "Default": "default",
-            "Small": "sm",
-            "Large": "lg"
-          }
-        }
-      },
-      "level": "library"
-    },
-    {
-      "name": "Progress",
-      "figma": {
-        "componentSet": "Progress - Nova",
-        "nodeId": "1953:17809",
-        "page": "Progress •"
-      },
-      "code": {
-        "file": "src/components/ui/progress.tsx",
-        "export": "Progress"
-      },
-      "props": {
-        "value": {
-          "figmaProperty": "Progress",
-          "kind": "prop",
-          "values": {
-            "0": 0,
-            "10": 10,
-            "20": 20,
-            "25": 25,
-            "33": 33,
-            "40": 40,
-            "50": 50,
-            "60": 60,
-            "66": 66,
-            "75": 75,
-            "80": 80,
-            "90": 90,
-            "100": 100
-          }
-        }
-      },
-      "level": "library"
-    },
-    {
-      "name": "Checkbox",
-      "figma": {
-        "componentSet": "Checkbox - Nova",
-        "nodeId": "1953:26531",
-        "page": "Checkbox •"
-      },
-      "code": {
-        "file": "src/components/ui/checkbox.tsx",
-        "export": "Checkbox"
-      },
-      "props": {
-        "checked": {
-          "figmaProperty": "Checked?",
-          "kind": "prop",
-          "values": {
-            "False": false,
-            "True": true,
-            "Indeterminate": "indeterminate"
-          }
-        }
-      },
-      "states": {
-        "figmaProperty": "State",
-        "values": {
-          "Default": "rest",
-          "Focus": ":focus-visible",
-          "Error Focus": "[aria-invalid]:focus-visible",
-          "Disabled": ":disabled"
-        }
-      },
-      "level": "library"
-    },
-    {
-      "name": "Switch",
-      "figma": {
-        "componentSet": "Switch - Nova",
-        "nodeId": "1953:13000",
-        "page": "Switch •"
-      },
-      "code": {
-        "file": "src/components/ui/switch.tsx",
-        "export": "Switch"
-      },
-      "props": {
-        "size": {
-          "figmaProperty": "Size",
-          "kind": "prop",
-          "checkValues": true,
-          "values": {
-            "Default": "default",
-            "Small": "sm"
-          }
-        }
-      },
-      "states": {
-        "figmaProperty": "State",
-        "values": {
-          "Unchecked": "rest",
-          "Unchecked focus": ":focus-visible",
-          "Checked": "[data-checked]",
-          "Checked focus": "[data-checked]:focus-visible",
-          "Unchecked disabled": ":disabled",
-          "Checked disabled": "[data-checked]:disabled"
-        }
-      },
-      "level": "library"
-    },
-    {
-      "name": "Radio",
-      "figma": {
-        "componentSet": "Radio - Nova",
-        "nodeId": "1953:15087",
-        "page": "Radio •"
-      },
-      "code": {
-        "file": "src/components/ui/radio-group.tsx",
-        "export": "RadioGroupItem"
-      },
-      "props": {
-        "checked": {
-          "figmaProperty": "Checked?",
-          "kind": "prop",
-          "values": {
-            "False": "",
-            "True": "data-checked"
-          }
-        }
-      },
-      "states": {
-        "figmaProperty": "State",
-        "values": {
-          "Default": "rest",
-          "Focus": ":focus-visible",
-          "Error Focus": "[aria-invalid]:focus-visible",
-          "Disabled": ":disabled"
-        }
-      },
-      "level": "library"
-    },
-    {
-      "name": "Textarea",
-      "figma": {
-        "componentSet": "Textarea - Nova",
-        "nodeId": "1953:11724",
-        "page": "Textarea •"
-      },
-      "code": {
-        "file": "src/components/ui/textarea.tsx",
-        "export": "Textarea"
-      },
-      "props": {},
-      "states": {
-        "figmaProperty": "State",
-        "values": {
-          "Empty": "rest",
-          "Placeholder": "rest (placeholder)",
-          "Value": "rest (value)",
-          "Focus": ":focus-visible",
-          "Error": "[aria-invalid]",
-          "Error Focus": "[aria-invalid]:focus-visible",
-          "Disabled": ":disabled"
-        }
-      },
-      "level": "library"
-    },
-    {
-      "name": "Accordion",
-      "figma": {
-        "componentSet": "Line Accordion Trigger - Nova",
-        "nodeId": "1953:33091",
-        "page": "Accordion •"
-      },
-      "code": {
-        "file": "src/components/ui/accordion.tsx",
-        "export": "AccordionTrigger"
-      },
-      "props": {},
-      "level": "library",
-      "states": {
-        "figmaProperty": "State",
-        "values": {
-          "Closed": "rest",
-          "Open": "[data-panel-open]",
-          "Focus": ":focus-visible",
-          "Hover": ":hover",
-          "Disabled": ":disabled"
-        }
-      },
-      "skipRadius": "rounded-lg in code only shapes the focus ring; the line accordion has square corners"
-    },
-    {
-      "name": "Aspect Ratio",
-      "figma": {
-        "componentSet": "Aspect Ratio",
-        "nodeId": "1953:31310",
-        "page": "Aspect Ratio"
-      },
-      "code": {
-        "file": "src/components/ui/aspect-ratio.tsx",
-        "export": "AspectRatio"
-      },
-      "props": {
-        "ratio": {
-          "figmaProperty": "Aspect",
-          "kind": "prop",
-          "values": {
-            "16:9": "16 / 9",
-            "1:1": "1",
-            "9:16": "9 / 16",
-            "21:9": "21 / 9"
-          }
-        }
-      },
-      "level": "library",
-      "skipRadius": "the rounded corner belongs to the example image, not the AspectRatio box"
-    },
-    {
-      "name": "Breadcrumb",
-      "figma": {
-        "componentSet": "Breadcrumb",
-        "nodeId": "1962:13741",
-        "page": "Breadcrumb"
-      },
-      "code": {
-        "file": "src/components/ui/breadcrumb.tsx",
-        "export": "Breadcrumb"
-      },
-      "props": {},
-      "level": "library"
-    },
-    {
-      "name": "Button Group",
-      "figma": {
-        "componentSet": "Button Group Button - Nova",
-        "nodeId": "1953:27724",
-        "page": "Button Group •"
-      },
-      "code": {
-        "file": "src/components/ui/button-group.tsx",
-        "export": "ButtonGroup"
-      },
-      "props": {},
-      "level": "library",
-      "states": {
-        "figmaProperty": "State",
-        "values": {
-          "Default": "rest",
-          "Focus": ":focus-visible",
-          "Hover": ":hover",
-          "Disabled": ":disabled"
-        }
-      },
-      "figmaOnly": {
-        "Variant": "variant of each Button inside",
-        "Size": "size of each Button inside",
-        "Position": "first / middle / last child (ButtonGroup removes the inner corners)"
-      },
-      "skipRadius": "corners come from the Buttons inside the group"
-    },
-    {
-      "name": "Select",
-      "figma": {
-        "componentSet": "Select & Combobox - Nova",
-        "nodeId": "1953:13582",
-        "page": "Select & Combobox •"
-      },
-      "code": {
-        "file": "src/components/ui/select.tsx",
-        "export": "SelectTrigger"
-      },
-      "props": {
-        "size": {
-          "figmaProperty": "Size",
-          "kind": "prop",
-          "checkValues": true,
-          "values": {
-            "Default": "default",
-            "Small": "sm"
-          },
-          "figmaOnlyValues": [
-            "Large",
-            "Extra small"
-          ]
-        }
-      },
-      "level": "library",
-      "states": {
-        "figmaProperty": "State",
-        "values": {
-          "Placeholder": "[data-placeholder]",
-          "Default": "rest",
-          "Focus": ":focus-visible",
-          "Error focus": "[aria-invalid]:focus-visible",
-          "Disabled": ":disabled",
-          "Error": "[aria-invalid]"
-        }
-      },
-      "figmaOnly": {
-        "Lines": "two-line items are content inside SelectItem"
-      }
-    },
-    {
-      "name": "Slider",
-      "figma": {
-        "componentSet": "Slider Horizontal - Nova",
-        "nodeId": "1953:14453",
-        "page": "Slider •"
-      },
-      "code": {
-        "file": "src/components/ui/slider.tsx",
-        "export": "Slider"
-      },
-      "props": {},
-      "level": "library",
-      "states": {
-        "figmaProperty": "State",
-        "values": {
-          "Active": "rest",
-          "Disabled": "[data-disabled]"
-        }
-      },
-      "figmaOnly": {
-        "Type": "one value (Default) or two values (Range): defaultValue={[25]} or {[25, 75]}"
-      }
-    },
-    {
-      "name": "Table",
-      "figma": {
-        "componentSet": "Basic Table Cell - Nova",
-        "nodeId": "1953:12862",
-        "page": "Table •"
-      },
-      "code": {
-        "file": "src/components/ui/table.tsx",
-        "export": "TableCell"
-      },
-      "props": {},
-      "level": "library",
-      "figmaOnly": {
-        "Parity": "striping is a TableRow class",
-        "Alignment": "text-right class on numeric cells"
-      }
-    },
-    {
-      "name": "Tabs",
-      "figma": {
-        "componentSet": "Tabs (segmented) - Nova",
-        "nodeId": "1953:12386",
-        "page": "Tabs •"
-      },
-      "code": {
-        "file": "src/components/ui/tabs.tsx",
-        "export": "TabsList"
-      },
-      "props": {},
-      "level": "library",
-      "figmaOnly": {
-        "Size": "h-* class on TabsList (default is h-8)"
-      }
-    },
-    {
-      "name": "Toggle",
-      "figma": {
-        "componentSet": "Toggle Button - Nova",
-        "nodeId": "1999:10837",
-        "page": "Toggle & Toggle Group •"
-      },
-      "code": {
-        "file": "src/components/ui/toggle.tsx",
-        "export": "Toggle"
-      },
-      "props": {
-        "variant": {
-          "figmaProperty": "Skin",
-          "values": {
-            "Ghost": "default",
-            "Outline": "outline"
-          }
-        },
-        "size": {
-          "figmaProperty": "Size",
-          "values": {
-            "Default": "default",
-            "Small": "sm",
-            "Large": "lg"
-          },
-          "figmaOnlyValues": [
-            "Extra small"
-          ]
-        }
-      },
-      "level": "library",
-      "states": {
-        "figmaProperty": "State",
-        "values": {
-          "Default": "rest",
-          "Disabled": ":disabled",
-          "Focus": ":focus-visible"
-        }
-      },
-      "figmaOnly": {
-        "Active?": "pressed / aria-pressed",
-        "Position": "first / middle / last item inside a ToggleGroup with spacing={0}"
-      }
-    },
-    {
-      "name": "Tooltip",
-      "figma": {
-        "componentSet": "Tooltip - Nova",
-        "nodeId": "1953:11601",
-        "page": "Tooltip •"
-      },
-      "code": {
-        "file": "src/components/ui/tooltip.tsx",
-        "export": "TooltipContent"
-      },
-      "props": {
-        "side": {
-          "figmaProperty": "Side",
-          "kind": "prop",
-          "values": {
-            "Top": "top",
-            "Bottom": "bottom",
-            "Left": "left",
-            "Right": "right"
-          }
-        }
-      },
-      "level": "library",
-      "figmaOnly": {
-        "Type": "Formatted and Shortcut are content (bold text, a Kbd) inside TooltipContent"
-      }
-    },
-    {
-      "name": "Dialog",
-      "figma": {
-        "componentSet": "Dialog - Nova",
-        "nodeId": "1953:22846",
-        "page": "Dialog •"
-      },
-      "code": {
-        "file": "src/components/ui/dialog.tsx",
-        "export": "DialogContent"
-      },
-      "props": {},
-      "level": "library",
-      "figmaOnly": {
-        "Type": "layout examples: Desktop/Mobile width comes from max-w-* on DialogContent; scrollable content sits in an overflow-y-auto block"
-      }
-    },
-    {
-      "name": "Alert Dialog",
-      "figma": {
-        "componentSet": "Alert Dialog - Nova",
-        "nodeId": "1953:32398",
-        "page": "Alert Dialog •"
-      },
-      "code": {
-        "file": "src/components/ui/alert-dialog.tsx",
-        "export": "AlertDialogContent"
-      },
-      "props": {
-        "size": {
-          "figmaProperty": "Size",
-          "kind": "prop",
-          "checkValues": true,
-          "values": {
-            "Regular": "default",
-            "Small": "sm"
-          }
-        }
-      },
-      "level": "library",
-      "figmaOnly": {
-        "Variant": "Destructive = variant=\"destructive\" on AlertDialogAction"
-      }
-    },
-    {
-      "name": "Sheet",
-      "figma": {
-        "componentSet": "Sheet",
-        "nodeId": "1953:14738",
-        "page": "Sheet •"
-      },
-      "code": {
-        "file": "src/components/ui/sheet.tsx",
-        "export": "SheetContent"
-      },
-      "props": {},
-      "level": "library",
-      "figmaOnly": {
-        "Scrollable": "content in an overflow-y-auto block"
-      },
-      "codeOnly": {
-        "side": "top / right / bottom / left; Figma shows the right side only"
-      },
-      "skipRadius": "the sheet is square in both; the rounded shape in Figma is the kit's content placeholder"
-    },
-    {
-      "name": "Drawer",
-      "figma": {
-        "componentSet": "Drawer - Nova",
-        "nodeId": "1962:14345",
-        "page": "Drawer •"
-      },
-      "code": {
-        "file": "src/components/ui/drawer.tsx",
-        "export": "DrawerContent"
-      },
-      "props": {},
-      "level": "library",
-      "skipRadius": "the first rounded class in code is the swipe handle; the panel's rounded-t-xl matches Figma's top corners (radius-xl)"
-    },
-    {
-      "name": "Hover Card",
-      "figma": {
-        "componentSet": "Hover Card",
-        "nodeId": "1962:14383",
-        "page": "Hover Card •"
-      },
-      "code": {
-        "file": "src/components/ui/hover-card.tsx",
-        "export": "HoverCardContent"
-      },
-      "props": {},
-      "level": "library"
-    },
-    {
-      "name": "Dropdown Menu",
-      "figma": {
-        "componentSet": "Dropdown Menu - Nova",
-        "nodeId": "1953:21264",
-        "page": "Dropdown Menu •"
-      },
-      "code": {
-        "file": "src/components/ui/dropdown-menu.tsx",
-        "export": "DropdownMenuContent"
-      },
-      "props": {},
-      "level": "library",
-      "figmaOnly": {
-        "Spacing": "example layouts of the menu content",
-        "Style": "example layouts of the menu content"
-      }
-    },
-    {
-      "name": "Context Menu",
-      "figma": {
-        "componentSet": "Dropdown Menu - Nova",
-        "nodeId": "1953:21264",
-        "page": "Dropdown Menu •"
-      },
-      "code": {
-        "file": "src/components/ui/context-menu.tsx",
-        "export": "ContextMenuContent"
-      },
-      "props": {},
-      "level": "library",
-      "figmaOnly": {
-        "note": "the kit has no Context Menu; it shares the Dropdown Menu's panel and items"
-      }
-    },
-    {
-      "name": "Menubar",
-      "figma": {
-        "componentSet": "Menubar - Nova",
-        "nodeId": "2047:14217",
-        "page": "Menubar •"
-      },
-      "code": {
-        "file": "src/components/ui/menubar.tsx",
-        "export": "Menubar"
-      },
-      "props": {},
-      "level": "library"
-    },
-    {
-      "name": "Navigation Menu",
-      "figma": {
-        "componentSet": "Navigation Menu - Nova",
-        "nodeId": "2078:525",
-        "page": "Navigation Menu •"
-      },
-      "code": {
-        "file": "src/components/ui/navigation-menu.tsx",
-        "export": "NavigationMenu"
-      },
-      "props": {},
-      "level": "library"
-    },
-    {
-      "name": "Command",
-      "figma": {
-        "componentSet": "Command - Nova",
-        "nodeId": "1999:15000",
-        "page": "Command •"
-      },
-      "code": {
-        "file": "src/components/ui/command.tsx",
-        "export": "Command"
-      },
-      "props": {},
-      "level": "library"
-    },
-    {
-      "name": "Sonner",
-      "figma": {
-        "componentSet": "Sonner - Nova",
-        "nodeId": "2047:14542",
-        "page": "Sonner •"
-      },
-      "code": {
-        "file": "src/components/ui/sonner.tsx",
-        "export": "Toaster"
-      },
-      "props": {},
-      "level": "library",
-      "figmaOnly": {
-        "Type": "toast.success / error / ... calls",
-        "Stack": "Sonner stacks toasts itself",
-        "Order": "Sonner stacks toasts itself"
-      },
-      "skipRadius": "radius is passed to Sonner as --border-radius: var(--radius)"
-    },
-    {
-      "name": "LogoMark",
-      "figma": {
-        "componentSet": "Symbol",
-        "nodeId": "5083:22",
-        "page": "Brand (style-bender)"
-      },
-      "code": {
-        "file": "src/components/ui/logo.tsx",
-        "export": "LogoMark"
-      },
-      "props": {},
-      "level": "brand",
-      "skipRadius": "the symbol tile is a path from the Claude Design SVG (rx 15 of 64), not a radius token"
-    },
-    {
-      "name": "Logo",
-      "figma": {
-        "componentSet": "Logo",
-        "nodeId": "5083:23",
-        "page": "Brand (style-bender)"
-      },
-      "code": {
-        "file": "src/components/ui/logo.tsx",
-        "export": "Logo"
-      },
-      "props": {},
-      "level": "brand",
-      "skipRadius": "the symbol tile is a path from the Claude Design SVG (rx 15 of 64), not a radius token"
-    },
-    {
-      "name": "Field",
-      "figma": {
-        "componentSet": "Vertical Field - Nova",
-        "nodeId": "1953:20683",
-        "page": "Field •"
-      },
-      "code": {
-        "file": "src/components/ui/field.tsx",
-        "export": "Field"
-      },
-      "props": {},
-      "level": "library",
-      "figmaOnly": {
-        "Type": "the control inside the Field (Input, Select, Textarea, Checkbox, RadioGroup, Slider)",
-        "State": "Error = data-invalid on Field plus aria-invalid on the control, with a FieldError",
-        "Orientation": "this set is orientation=\"vertical\"; Horizontal Field - Nova is orientation=\"horizontal\""
-      },
-      "skipRadius": "a Field has no corners of its own; the rounded shape is the control inside it, checked as Input"
-    },
-    {
-      "name": "Field (horizontal)",
-      "figma": {
-        "componentSet": "Horizontal Field - Nova",
-        "nodeId": "1953:20777",
-        "page": "Field •"
-      },
-      "code": {
-        "file": "src/components/ui/field.tsx",
-        "export": "Field"
-      },
-      "props": {},
-      "level": "library",
-      "figmaOnly": {
-        "Type": "the control inside the Field",
-        "State": "Error = data-invalid on Field",
-        "Orientation": "orientation=\"horizontal\" (code also has \"responsive\")"
-      },
-      "skipRadius": "a Field has no corners of its own; the rounded shape is the control inside it, checked as Input"
-    },
-    {
-      "name": "Input OTP",
-      "figma": {
-        "componentSet": "Input OTP - Nova",
-        "nodeId": "1999:16048",
-        "page": "Input OTP •"
-      },
-      "code": {
-        "file": "src/components/ui/input-otp.tsx",
-        "export": "InputOTPSlot"
-      },
-      "props": {},
-      "level": "library",
-      "states": {
-        "figmaProperty": "State",
-        "values": {
-          "Empty": "rest",
-          "Placeholder": "rest (placeholder)",
-          "Value": "filled",
-          "Focus": "data-active",
-          "Error": "aria-invalid",
-          "Error Focus": "aria-invalid + data-active",
-          "Disabled": ":disabled"
-        }
-      },
-      "figmaOnly": {
-        "Position": "first / middle / last slot in an InputOTPGroup (outer corners rounded)",
-        "Size": "h-* / w-* classes on the slots; code has one size (Default)"
-      }
-    },
-    {
-      "name": "Combobox",
-      "figma": {
-        "componentSet": "Multi Combobox - Nova",
-        "nodeId": "1953:14105",
-        "page": "Select & Combobox •"
-      },
-      "code": {
-        "file": "src/components/ui/combobox.tsx",
-        "export": "ComboboxChips"
-      },
-      "props": {},
-      "level": "library",
-      "figmaOnly": {
-        "State": "Empty / Items = chips present; Focus = focus-within ring",
-        "Size": "one size in code (Default)"
-      },
-      "$note": "Single-value Combobox shares the Select & Combobox - Nova set with Select"
-    },
-    {
-      "name": "Combobox Chip",
-      "figma": {
-        "componentSet": "Multi Combobox Tag",
-        "nodeId": "1953:14176",
-        "page": "Select & Combobox •"
-      },
-      "code": {
-        "file": "src/components/ui/combobox.tsx",
-        "export": "ComboboxChip"
-      },
-      "props": {},
-      "level": "library",
-      "figmaOnly": {
-        "State": "Hover = hover: classes"
-      },
-      "codeRadius": {
-        "token": "--radius-sm",
-        "from": "rounded-sm"
-      }
-    },
-    {
-      "name": "Native Select",
-      "figma": {
-        "componentSet": "Select & Combobox - Nova",
-        "nodeId": "1953:13582",
-        "page": "Select & Combobox •"
-      },
-      "code": {
-        "file": "src/components/ui/native-select.tsx",
-        "export": "NativeSelect"
-      },
-      "props": {
-        "size": {
-          "figmaProperty": "Size",
-          "kind": "prop",
-          "checkValues": true,
-          "values": {
-            "Default": "default",
-            "Small": "sm"
-          },
-          "figmaOnlyValues": [
-            "Large",
-            "Extra small"
-          ]
-        }
-      },
-      "level": "library",
-      "figmaOnly": {
-        "note": "the kit has no native select; it looks like the Select trigger",
-        "State": "browser states: :focus-visible, aria-invalid, :disabled"
-      }
-    },
-    {
-      "name": "Calendar",
-      "figma": {
-        "componentSet": "Calendar - Nova",
-        "nodeId": "1999:6911",
-        "page": "Date Picker & Calendar •"
-      },
-      "code": {
-        "file": "src/components/ui/calendar.tsx",
-        "export": "Calendar"
-      },
-      "props": {},
-      "level": "library",
-      "figmaOnly": {
-        "Months": "numberOfMonths={1|2|3}"
-      },
-      "codeRadius": {
-        "token": "--radius-md",
-        "from": "[--cell-radius:var(--radius-md)]"
-      }
-    },
-    {
-      "name": "Date Picker",
-      "figma": {
-        "componentSet": "Date Picker - Nova",
-        "nodeId": "1999:6891",
-        "page": "Date Picker & Calendar •"
-      },
-      "code": {
-        "file": "src/components/ui/calendar.tsx",
-        "export": "Calendar"
-      },
-      "props": {},
-      "level": "library",
-      "figmaOnly": {
-        "State": "Placeholder / Value / Focus of the trigger Button; a pattern of Popover + Button + Calendar, no own file"
-      },
-      "skipRadius": "a composition: the trigger is an outline Button, already checked as Button"
-    },
-    {
-      "name": "Input Group",
-      "figma": {
-        "componentSet": "Input - Nova",
-        "nodeId": "1953:18886",
-        "page": "Input & Input Group •"
-      },
-      "code": {
-        "file": "src/components/ui/input-group.tsx",
-        "export": "InputGroup"
-      },
-      "props": {},
-      "level": "library",
-      "figmaOnly": {
-        "Position": "Left / Middle / Right = an Input inside a group with addons",
-        "Size": "one size in code",
-        "State": "same states as Input"
-      }
-    },
-    {
-      "name": "Item",
-      "figma": {
-        "componentSet": "Item - Nova",
-        "nodeId": "1999:10197",
-        "page": "Item •"
-      },
-      "code": {
-        "file": "src/components/ui/item.tsx",
-        "export": "Item"
-      },
-      "props": {
-        "variant": {
-          "figmaProperty": "Variant",
-          "values": {
-            "Default": "default",
-            "Outline": "outline",
-            "Muted": "muted"
-          }
-        },
-        "size": {
-          "figmaProperty": "Size",
-          "values": {
-            "Default": "default",
-            "Small": "sm",
-            "Extra Small": "xs"
-          }
-        }
-      },
-      "level": "library",
-      "figmaOnly": {
-        "Interaction": "None = a <div>; Default / Hover = rendered as a link or button (render prop), hover: classes"
-      }
-    },
-    {
-      "name": "Empty",
-      "figma": {
-        "componentSet": "Empty - Nova",
-        "nodeId": "1999:15672",
-        "page": "Empty •"
-      },
-      "code": {
-        "file": "src/components/ui/empty.tsx",
-        "export": "Empty"
-      },
-      "props": {},
-      "level": "library",
-      "figmaOnly": {
-        "Variant": "Default = no border; Outline = className=\"border\"; Outline dashed = \"border border-dashed\"; Background = \"bg-muted\""
-      }
-    },
-    {
-      "name": "Scroll Area",
-      "figma": {
-        "componentSet": "Scrollbar",
-        "nodeId": "1953:14936",
-        "page": "Scroll Area"
-      },
-      "code": {
-        "file": "src/components/ui/scroll-area.tsx",
-        "export": "ScrollBar"
-      },
-      "props": {
-        "orientation": {
-          "figmaProperty": "Type",
-          "kind": "prop",
-          "values": {
-            "Vertical": "vertical",
-            "Horizontal": "horizontal"
-          },
-          "note": "values come from Base UI ScrollArea.Scrollbar.Props (\"vertical\" | \"horizontal\"), not written in our file"
-        }
-      },
-      "level": "library"
-    },
-    {
-      "name": "Resizable",
-      "figma": {
-        "componentSet": "Resizable",
-        "nodeId": "1953:15016",
-        "page": "Resizable"
-      },
-      "code": {
-        "file": "src/components/ui/resizable.tsx",
-        "export": "ResizableHandle"
-      },
-      "props": {},
-      "level": "library",
-      "figmaOnly": {
-        "Orientation": "the handle follows the group: ResizablePanelGroup orientation=\"horizontal\" gives the vertical grip and the other way round; withHandle shows the grip"
-      }
-    },
-    {
-      "name": "Carousel",
-      "figma": {
-        "componentSet": "Carousel (Horizontal) - Nova",
-        "nodeId": "1953:26893",
-        "page": "Carousel •"
-      },
-      "code": {
-        "file": "src/components/ui/carousel.tsx",
-        "export": "Carousel"
-      },
-      "props": {},
-      "level": "library",
-      "figmaOnly": {
-        "Slides": "number of CarouselItem children",
-        "Orientation": "this set is orientation=\"horizontal\""
-      }
-    },
-    {
-      "name": "Carousel (vertical)",
-      "figma": {
-        "componentSet": "Carousel (Vertical) - Nova",
-        "nodeId": "1953:26931",
-        "page": "Carousel •"
-      },
-      "code": {
-        "file": "src/components/ui/carousel.tsx",
-        "export": "Carousel"
-      },
-      "props": {},
-      "level": "library",
-      "figmaOnly": {
-        "Slides": "number of CarouselItem children",
-        "Orientation": "this set is orientation=\"vertical\""
-      }
-    },
-    {
-      "name": "Sidebar Menu Button",
-      "figma": {
-        "componentSet": "Sidebar Item / Expanded / 1st Level - Nova",
-        "nodeId": "2047:13506",
-        "page": "Sidebar •"
-      },
-      "code": {
-        "file": "src/components/ui/sidebar.tsx",
-        "export": "SidebarMenuButton"
-      },
-      "props": {},
-      "level": "library",
-      "states": {
-        "figmaProperty": "State",
-        "values": {
-          "Default": "rest",
-          "Active": "isActive (data-active)",
-          "Focus": ":focus-visible",
-          "Active Focus": "isActive + :focus-visible"
-        }
-      },
-      "figmaOnly": {
-        "Type": "Base = SidebarMenuButton; Expanded / Collapsed = inside a Collapsible with a chevron; Dropdown = inside a DropdownMenu; Badge = with SidebarMenuBadge"
-      },
-      "codeRadius": {
-        "token": "--radius-md",
-        "from": "overflow-hidden rounded-md p-2"
-      }
-    },
-    {
-      "name": "Sidebar Menu Button (collapsed)",
-      "figma": {
-        "componentSet": "Sidebar Item / Collapsed - Nova",
-        "nodeId": "2047:13456",
-        "page": "Sidebar •"
-      },
-      "code": {
-        "file": "src/components/ui/sidebar.tsx",
-        "export": "SidebarMenuButton"
-      },
-      "props": {
-        "isActive": {
-          "figmaProperty": "State",
-          "kind": "boolean",
-          "values": {
-            "Active": true,
-            "Regular": false
-          }
-        }
-      },
-      "level": "library",
-      "figmaOnly": {
-        "note": "the same button when the Sidebar has collapsible=\"icon\" and is collapsed"
-      },
-      "codeRadius": {
-        "token": "--radius-md",
-        "from": "overflow-hidden rounded-md p-2"
-      }
-    },
-    {
-      "name": "Sidebar Menu Sub Button",
-      "figma": {
-        "componentSet": "Sidebar Item / Expanded / 2nd Level - Nova",
-        "nodeId": "2047:13613",
-        "page": "Sidebar •"
-      },
-      "code": {
-        "file": "src/components/ui/sidebar.tsx",
-        "export": "SidebarMenuSubButton"
-      },
-      "props": {
-        "isActive": {
-          "figmaProperty": "State",
-          "kind": "boolean",
-          "values": {
-            "Active": true,
-            "Default": false
-          }
-        }
-      },
-      "level": "library",
-      "codeRadius": {
-        "token": "--radius-md",
-        "from": "rounded-md"
-      }
-    },
-    {
-      "name": "Sidebar Group Label",
-      "figma": {
-        "componentSet": "Sidebar Group Label - Nova",
-        "nodeId": "2047:13640",
-        "page": "Sidebar •"
-      },
-      "code": {
-        "file": "src/components/ui/sidebar.tsx",
-        "export": "SidebarGroupLabel"
-      },
-      "props": {},
-      "level": "library",
-      "figmaOnly": {
-        "Type": "Base = SidebarGroupLabel; Action = with SidebarGroupAction; Expanded / Collapsed = label as a CollapsibleTrigger"
-      },
-      "codeRadius": {
-        "token": "--radius-md",
-        "from": "rounded-md"
-      }
-    },
-    {
-      "name": "Sidebar Menu Badge",
-      "figma": {
-        "componentSet": "Sidebar Badge - Nova",
-        "nodeId": "2047:13471",
-        "page": "Sidebar •"
-      },
-      "code": {
-        "file": "src/components/ui/sidebar.tsx",
-        "export": "SidebarMenuBadge"
-      },
-      "props": {},
-      "level": "library",
-      "figmaOnly": {
-        "Variant": "Primary = className with bg-primary text-primary-foreground"
-      },
-      "codeRadius": {
-        "token": "--radius-md",
-        "from": "rounded-md"
-      }
-    },
-    {
-      "name": "Sidebar",
-      "figma": {
-        "componentSet": "Sidebar - With Children",
-        "nodeId": "2351:3044",
-        "page": "Sidebar •"
-      },
-      "code": {
-        "file": "src/components/ui/sidebar.tsx",
-        "export": "Sidebar"
-      },
-      "props": {},
-      "level": "library",
-      "skipRadius": "a layout of SidebarMenuButtons, each checked above"
-    },
-    {
-      "name": "Sidebar (collapsed)",
-      "figma": {
-        "componentSet": "Sidebar - Collapsed",
-        "nodeId": "2351:3048",
-        "page": "Sidebar •"
-      },
-      "code": {
-        "file": "src/components/ui/sidebar.tsx",
-        "export": "Sidebar"
-      },
-      "props": {},
-      "level": "library",
-      "figmaOnly": {
-        "note": "collapsible=\"icon\", collapsed"
-      },
-      "skipRadius": "a layout of collapsed SidebarMenuButtons, checked above"
-    },
-    {
-      "name": "Chart",
-      "figma": {
-        "componentSet": "Chart",
-        "nodeId": "1999:12790",
-        "page": "Chart"
-      },
-      "code": {
-        "file": "src/components/ui/chart.tsx",
-        "export": "ChartContainer"
-      },
-      "props": {},
-      "level": "library",
-      "skipRadius": "the rounded shape is the kit's placeholder; the chart itself is square"
-    },
-    {
-      "name": "Chart Legend",
-      "figma": {
-        "componentSet": "Legend",
-        "nodeId": "1999:13022",
-        "page": "Chart"
-      },
-      "code": {
-        "file": "src/components/ui/chart.tsx",
-        "export": "ChartLegendContent"
-      },
-      "props": {},
-      "level": "library",
-      "codeRadius": {
-        "token": "--radius-2xs",
-        "from": "rounded-2xs"
-      }
-    },
-    {
-      "name": "Line Chart",
-      "figma": {
-        "componentSet": "Line chart",
-        "nodeId": "1999:13135",
-        "page": "Chart"
-      },
-      "code": {
-        "file": "src/components/ui/chart.tsx",
-        "export": "ChartContainer"
-      },
-      "props": {},
-      "level": "library",
-      "figmaOnly": {
-        "Type": "Recharts <LineChart> setups: type=\"natural\" | \"linear\" | \"step\" on <Line>, several <Line>s for Multiple"
-      },
-      "skipRadius": "square in Figma; the chart sits inside a Card"
-    },
-    {
-      "name": "Area Chart",
-      "figma": {
-        "componentSet": "Area chart",
-        "nodeId": "1999:13167",
-        "page": "Chart"
-      },
-      "code": {
-        "file": "src/components/ui/chart.tsx",
-        "export": "ChartContainer"
-      },
-      "props": {},
-      "level": "library",
-      "figmaOnly": {
-        "Type": "Recharts <AreaChart> setups: type on <Area>, stackId for Stacked"
-      },
-      "skipRadius": "square in Figma; the chart sits inside a Card"
-    },
-    {
-      "name": "Bar Chart",
-      "figma": {
-        "componentSet": "Bar chart",
-        "nodeId": "1999:13206",
-        "page": "Chart"
-      },
-      "code": {
-        "file": "src/components/ui/chart.tsx",
-        "export": "ChartContainer"
-      },
-      "props": {},
-      "level": "library",
-      "figmaOnly": {
-        "Type": "Recharts <BarChart> setups: layout=\"vertical\" for Horizontal, several <Bar>s or stackId"
-      },
-      "skipRadius": "square in Figma; the chart sits inside a Card"
-    },
-    {
-      "name": "Data Table Header",
-      "figma": {
-        "componentSet": "Table Header",
-        "nodeId": "1999:9214",
-        "page": "Data Table"
-      },
-      "code": {
-        "file": "src/components/ui/table.tsx",
-        "export": "TableHead"
-      },
-      "props": {},
-      "level": "library",
-      "figmaOnly": {
-        "Content": "Text / Sortable (a ghost Button with a sort icon) / Checkbox / Empty",
-        "Alignment": "text-right class",
-        "State": "Hover / Active = row hover and data-state=selected"
-      }
-    },
-    {
-      "name": "Data Table Cell",
-      "figma": {
-        "componentSet": "Table Cell",
-        "nodeId": "1999:9349",
-        "page": "Data Table"
-      },
-      "code": {
-        "file": "src/components/ui/table.tsx",
-        "export": "TableCell"
-      },
-      "props": {},
-      "level": "library",
-      "figmaOnly": {
-        "Content": "Text (1 or 2 lines) / Checkbox / Slot (any content)",
-        "Alignment": "text-right class",
-        "State": "Hover / Active = row hover and data-state=selected"
-      }
+      "origin": "Generated in Figma from code (code first), rebuilt in Style Bender DS."
     }
-  ]
+  ],
+  "notYetInFigma": {
+    "$description": "Mappings from the original kit file (uvAxakxuZjwClmZjLL9ca3). These components are not built in Style Bender DS yet, so parity skips them. Build one in Figma, update its nodeId and move it back into components.",
+    "components": [
+      {
+        "name": "Badge",
+        "figma": {
+          "componentSet": "Badge",
+          "nodeId": "1953:31170",
+          "page": "Badge"
+        },
+        "code": {
+          "file": "src/components/ui/badge.tsx",
+          "export": "Badge"
+        },
+        "props": {
+          "variant": {
+            "figmaProperty": "Variant",
+            "values": {
+              "Primary": "default",
+              "Secondary": "secondary",
+              "Outline": "outline",
+              "Ghost": "ghost",
+              "Destructive": "destructive"
+            },
+            "codeOnly": [
+              "link"
+            ]
+          }
+        },
+        "states": {
+          "figmaProperty": "State",
+          "values": {
+            "Default": "rest",
+            "Focus": ":focus-visible"
+          }
+        },
+        "level": "library"
+      },
+      {
+        "name": "Label",
+        "figma": {
+          "componentSet": "Label",
+          "nodeId": "1953:18500",
+          "page": "Label"
+        },
+        "code": {
+          "file": "src/components/ui/label.tsx",
+          "export": "Label"
+        },
+        "props": {},
+        "figmaOnly": {
+          "Layout": "layout of the surrounding form",
+          "State": "Error = text-destructive on the label",
+          "Weight": "font-medium / font-normal class"
+        },
+        "level": "library"
+      },
+      {
+        "name": "Separator",
+        "figma": {
+          "componentSet": "Separator",
+          "nodeId": "1953:14894",
+          "page": "Separator"
+        },
+        "code": {
+          "file": "src/components/ui/separator.tsx",
+          "export": "Separator"
+        },
+        "props": {
+          "orientation": {
+            "figmaProperty": "Direction",
+            "kind": "prop",
+            "values": {
+              "Default": "horizontal",
+              "Vertical": "vertical"
+            }
+          }
+        },
+        "figmaOnly": {
+          "Spacing": "margin from the surrounding layout"
+        },
+        "level": "library"
+      },
+      {
+        "name": "Skeleton",
+        "figma": {
+          "componentSet": "Skeleton / Placeholder Line",
+          "nodeId": "1957:49264",
+          "page": "Skeleton"
+        },
+        "code": {
+          "file": "src/components/ui/skeleton.tsx",
+          "export": "Skeleton"
+        },
+        "props": {},
+        "level": "library"
+      },
+      {
+        "name": "Spinner",
+        "figma": {
+          "componentSet": "Spinner",
+          "nodeId": "1953:14612",
+          "page": "Spinner"
+        },
+        "code": {
+          "file": "src/components/ui/spinner.tsx",
+          "export": "Spinner"
+        },
+        "props": {},
+        "figmaOnly": {
+          "Type": "Mirrored is a rotated copy",
+          "Size": "size-3 / size-4 class"
+        },
+        "level": "library",
+        "skipRadius": "a Lucide loader icon in code and a circle in Figma; no corner radius to compare"
+      },
+      {
+        "name": "Kbd",
+        "figma": {
+          "componentSet": "kbd - Nova",
+          "nodeId": "2255:18110",
+          "page": "Kbd •"
+        },
+        "code": {
+          "file": "src/components/ui/kbd.tsx",
+          "export": "Kbd"
+        },
+        "props": {},
+        "figmaOnly": {
+          "Style": "Alt = inside a tooltip (in-data-[slot=tooltip-content])"
+        },
+        "level": "library"
+      },
+      {
+        "name": "Avatar",
+        "figma": {
+          "componentSet": "Avatar Placeholder",
+          "nodeId": "1953:32067",
+          "page": "Avatar"
+        },
+        "code": {
+          "file": "src/components/ui/avatar.tsx",
+          "export": "Avatar"
+        },
+        "props": {
+          "size": {
+            "figmaProperty": "Size",
+            "kind": "prop",
+            "checkValues": true,
+            "values": {
+              "Default": "default",
+              "Small": "sm",
+              "Large": "lg"
+            }
+          }
+        },
+        "level": "library"
+      },
+      {
+        "name": "Progress",
+        "figma": {
+          "componentSet": "Progress - Nova",
+          "nodeId": "1953:17809",
+          "page": "Progress •"
+        },
+        "code": {
+          "file": "src/components/ui/progress.tsx",
+          "export": "Progress"
+        },
+        "props": {
+          "value": {
+            "figmaProperty": "Progress",
+            "kind": "prop",
+            "values": {
+              "0": 0,
+              "10": 10,
+              "20": 20,
+              "25": 25,
+              "33": 33,
+              "40": 40,
+              "50": 50,
+              "60": 60,
+              "66": 66,
+              "75": 75,
+              "80": 80,
+              "90": 90,
+              "100": 100
+            }
+          }
+        },
+        "level": "library"
+      },
+      {
+        "name": "Checkbox",
+        "figma": {
+          "componentSet": "Checkbox - Nova",
+          "nodeId": "1953:26531",
+          "page": "Checkbox •"
+        },
+        "code": {
+          "file": "src/components/ui/checkbox.tsx",
+          "export": "Checkbox"
+        },
+        "props": {
+          "checked": {
+            "figmaProperty": "Checked?",
+            "kind": "prop",
+            "values": {
+              "False": false,
+              "True": true,
+              "Indeterminate": "indeterminate"
+            }
+          }
+        },
+        "states": {
+          "figmaProperty": "State",
+          "values": {
+            "Default": "rest",
+            "Focus": ":focus-visible",
+            "Error Focus": "[aria-invalid]:focus-visible",
+            "Disabled": ":disabled"
+          }
+        },
+        "level": "library"
+      },
+      {
+        "name": "Switch",
+        "figma": {
+          "componentSet": "Switch - Nova",
+          "nodeId": "1953:13000",
+          "page": "Switch •"
+        },
+        "code": {
+          "file": "src/components/ui/switch.tsx",
+          "export": "Switch"
+        },
+        "props": {
+          "size": {
+            "figmaProperty": "Size",
+            "kind": "prop",
+            "checkValues": true,
+            "values": {
+              "Default": "default",
+              "Small": "sm"
+            }
+          }
+        },
+        "states": {
+          "figmaProperty": "State",
+          "values": {
+            "Unchecked": "rest",
+            "Unchecked focus": ":focus-visible",
+            "Checked": "[data-checked]",
+            "Checked focus": "[data-checked]:focus-visible",
+            "Unchecked disabled": ":disabled",
+            "Checked disabled": "[data-checked]:disabled"
+          }
+        },
+        "level": "library"
+      },
+      {
+        "name": "Radio",
+        "figma": {
+          "componentSet": "Radio - Nova",
+          "nodeId": "1953:15087",
+          "page": "Radio •"
+        },
+        "code": {
+          "file": "src/components/ui/radio-group.tsx",
+          "export": "RadioGroupItem"
+        },
+        "props": {
+          "checked": {
+            "figmaProperty": "Checked?",
+            "kind": "prop",
+            "values": {
+              "False": "",
+              "True": "data-checked"
+            }
+          }
+        },
+        "states": {
+          "figmaProperty": "State",
+          "values": {
+            "Default": "rest",
+            "Focus": ":focus-visible",
+            "Error Focus": "[aria-invalid]:focus-visible",
+            "Disabled": ":disabled"
+          }
+        },
+        "level": "library"
+      },
+      {
+        "name": "Textarea",
+        "figma": {
+          "componentSet": "Textarea - Nova",
+          "nodeId": "1953:11724",
+          "page": "Textarea •"
+        },
+        "code": {
+          "file": "src/components/ui/textarea.tsx",
+          "export": "Textarea"
+        },
+        "props": {},
+        "states": {
+          "figmaProperty": "State",
+          "values": {
+            "Empty": "rest",
+            "Placeholder": "rest (placeholder)",
+            "Value": "rest (value)",
+            "Focus": ":focus-visible",
+            "Error": "[aria-invalid]",
+            "Error Focus": "[aria-invalid]:focus-visible",
+            "Disabled": ":disabled"
+          }
+        },
+        "level": "library"
+      },
+      {
+        "name": "Accordion",
+        "figma": {
+          "componentSet": "Line Accordion Trigger - Nova",
+          "nodeId": "1953:33091",
+          "page": "Accordion •"
+        },
+        "code": {
+          "file": "src/components/ui/accordion.tsx",
+          "export": "AccordionTrigger"
+        },
+        "props": {},
+        "level": "library",
+        "states": {
+          "figmaProperty": "State",
+          "values": {
+            "Closed": "rest",
+            "Open": "[data-panel-open]",
+            "Focus": ":focus-visible",
+            "Hover": ":hover",
+            "Disabled": ":disabled"
+          }
+        },
+        "skipRadius": "rounded-lg in code only shapes the focus ring; the line accordion has square corners"
+      },
+      {
+        "name": "Aspect Ratio",
+        "figma": {
+          "componentSet": "Aspect Ratio",
+          "nodeId": "1953:31310",
+          "page": "Aspect Ratio"
+        },
+        "code": {
+          "file": "src/components/ui/aspect-ratio.tsx",
+          "export": "AspectRatio"
+        },
+        "props": {
+          "ratio": {
+            "figmaProperty": "Aspect",
+            "kind": "prop",
+            "values": {
+              "16:9": "16 / 9",
+              "1:1": "1",
+              "9:16": "9 / 16",
+              "21:9": "21 / 9"
+            }
+          }
+        },
+        "level": "library",
+        "skipRadius": "the rounded corner belongs to the example image, not the AspectRatio box"
+      },
+      {
+        "name": "Breadcrumb",
+        "figma": {
+          "componentSet": "Breadcrumb",
+          "nodeId": "1962:13741",
+          "page": "Breadcrumb"
+        },
+        "code": {
+          "file": "src/components/ui/breadcrumb.tsx",
+          "export": "Breadcrumb"
+        },
+        "props": {},
+        "level": "library"
+      },
+      {
+        "name": "Button Group",
+        "figma": {
+          "componentSet": "Button Group Button - Nova",
+          "nodeId": "1953:27724",
+          "page": "Button Group •"
+        },
+        "code": {
+          "file": "src/components/ui/button-group.tsx",
+          "export": "ButtonGroup"
+        },
+        "props": {},
+        "level": "library",
+        "states": {
+          "figmaProperty": "State",
+          "values": {
+            "Default": "rest",
+            "Focus": ":focus-visible",
+            "Hover": ":hover",
+            "Disabled": ":disabled"
+          }
+        },
+        "figmaOnly": {
+          "Variant": "variant of each Button inside",
+          "Size": "size of each Button inside",
+          "Position": "first / middle / last child (ButtonGroup removes the inner corners)"
+        },
+        "skipRadius": "corners come from the Buttons inside the group"
+      },
+      {
+        "name": "Select",
+        "figma": {
+          "componentSet": "Select & Combobox - Nova",
+          "nodeId": "1953:13582",
+          "page": "Select & Combobox •"
+        },
+        "code": {
+          "file": "src/components/ui/select.tsx",
+          "export": "SelectTrigger"
+        },
+        "props": {
+          "size": {
+            "figmaProperty": "Size",
+            "kind": "prop",
+            "checkValues": true,
+            "values": {
+              "Default": "default",
+              "Small": "sm"
+            },
+            "figmaOnlyValues": [
+              "Large",
+              "Extra small"
+            ]
+          }
+        },
+        "level": "library",
+        "states": {
+          "figmaProperty": "State",
+          "values": {
+            "Placeholder": "[data-placeholder]",
+            "Default": "rest",
+            "Focus": ":focus-visible",
+            "Error focus": "[aria-invalid]:focus-visible",
+            "Disabled": ":disabled",
+            "Error": "[aria-invalid]"
+          }
+        },
+        "figmaOnly": {
+          "Lines": "two-line items are content inside SelectItem"
+        }
+      },
+      {
+        "name": "Slider",
+        "figma": {
+          "componentSet": "Slider Horizontal - Nova",
+          "nodeId": "1953:14453",
+          "page": "Slider •"
+        },
+        "code": {
+          "file": "src/components/ui/slider.tsx",
+          "export": "Slider"
+        },
+        "props": {},
+        "level": "library",
+        "states": {
+          "figmaProperty": "State",
+          "values": {
+            "Active": "rest",
+            "Disabled": "[data-disabled]"
+          }
+        },
+        "figmaOnly": {
+          "Type": "one value (Default) or two values (Range): defaultValue={[25]} or {[25, 75]}"
+        }
+      },
+      {
+        "name": "Table",
+        "figma": {
+          "componentSet": "Basic Table Cell - Nova",
+          "nodeId": "1953:12862",
+          "page": "Table •"
+        },
+        "code": {
+          "file": "src/components/ui/table.tsx",
+          "export": "TableCell"
+        },
+        "props": {},
+        "level": "library",
+        "figmaOnly": {
+          "Parity": "striping is a TableRow class",
+          "Alignment": "text-right class on numeric cells"
+        }
+      },
+      {
+        "name": "Tabs",
+        "figma": {
+          "componentSet": "Tabs (segmented) - Nova",
+          "nodeId": "1953:12386",
+          "page": "Tabs •"
+        },
+        "code": {
+          "file": "src/components/ui/tabs.tsx",
+          "export": "TabsList"
+        },
+        "props": {},
+        "level": "library",
+        "figmaOnly": {
+          "Size": "h-* class on TabsList (default is h-8)"
+        }
+      },
+      {
+        "name": "Toggle",
+        "figma": {
+          "componentSet": "Toggle Button - Nova",
+          "nodeId": "1999:10837",
+          "page": "Toggle & Toggle Group •"
+        },
+        "code": {
+          "file": "src/components/ui/toggle.tsx",
+          "export": "Toggle"
+        },
+        "props": {
+          "variant": {
+            "figmaProperty": "Skin",
+            "values": {
+              "Ghost": "default",
+              "Outline": "outline"
+            }
+          },
+          "size": {
+            "figmaProperty": "Size",
+            "values": {
+              "Default": "default",
+              "Small": "sm",
+              "Large": "lg"
+            },
+            "figmaOnlyValues": [
+              "Extra small"
+            ]
+          }
+        },
+        "level": "library",
+        "states": {
+          "figmaProperty": "State",
+          "values": {
+            "Default": "rest",
+            "Disabled": ":disabled",
+            "Focus": ":focus-visible"
+          }
+        },
+        "figmaOnly": {
+          "Active?": "pressed / aria-pressed",
+          "Position": "first / middle / last item inside a ToggleGroup with spacing={0}"
+        }
+      },
+      {
+        "name": "Tooltip",
+        "figma": {
+          "componentSet": "Tooltip - Nova",
+          "nodeId": "1953:11601",
+          "page": "Tooltip •"
+        },
+        "code": {
+          "file": "src/components/ui/tooltip.tsx",
+          "export": "TooltipContent"
+        },
+        "props": {
+          "side": {
+            "figmaProperty": "Side",
+            "kind": "prop",
+            "values": {
+              "Top": "top",
+              "Bottom": "bottom",
+              "Left": "left",
+              "Right": "right"
+            }
+          }
+        },
+        "level": "library",
+        "figmaOnly": {
+          "Type": "Formatted and Shortcut are content (bold text, a Kbd) inside TooltipContent"
+        }
+      },
+      {
+        "name": "Dialog",
+        "figma": {
+          "componentSet": "Dialog - Nova",
+          "nodeId": "1953:22846",
+          "page": "Dialog •"
+        },
+        "code": {
+          "file": "src/components/ui/dialog.tsx",
+          "export": "DialogContent"
+        },
+        "props": {},
+        "level": "library",
+        "figmaOnly": {
+          "Type": "layout examples: Desktop/Mobile width comes from max-w-* on DialogContent; scrollable content sits in an overflow-y-auto block"
+        }
+      },
+      {
+        "name": "Alert Dialog",
+        "figma": {
+          "componentSet": "Alert Dialog - Nova",
+          "nodeId": "1953:32398",
+          "page": "Alert Dialog •"
+        },
+        "code": {
+          "file": "src/components/ui/alert-dialog.tsx",
+          "export": "AlertDialogContent"
+        },
+        "props": {
+          "size": {
+            "figmaProperty": "Size",
+            "kind": "prop",
+            "checkValues": true,
+            "values": {
+              "Regular": "default",
+              "Small": "sm"
+            }
+          }
+        },
+        "level": "library",
+        "figmaOnly": {
+          "Variant": "Destructive = variant=\"destructive\" on AlertDialogAction"
+        }
+      },
+      {
+        "name": "Sheet",
+        "figma": {
+          "componentSet": "Sheet",
+          "nodeId": "1953:14738",
+          "page": "Sheet •"
+        },
+        "code": {
+          "file": "src/components/ui/sheet.tsx",
+          "export": "SheetContent"
+        },
+        "props": {},
+        "level": "library",
+        "figmaOnly": {
+          "Scrollable": "content in an overflow-y-auto block"
+        },
+        "codeOnly": {
+          "side": "top / right / bottom / left; Figma shows the right side only"
+        },
+        "skipRadius": "the sheet is square in both; the rounded shape in Figma is the kit's content placeholder"
+      },
+      {
+        "name": "Drawer",
+        "figma": {
+          "componentSet": "Drawer - Nova",
+          "nodeId": "1962:14345",
+          "page": "Drawer •"
+        },
+        "code": {
+          "file": "src/components/ui/drawer.tsx",
+          "export": "DrawerContent"
+        },
+        "props": {},
+        "level": "library",
+        "skipRadius": "the first rounded class in code is the swipe handle; the panel's rounded-t-xl matches Figma's top corners (radius-xl)"
+      },
+      {
+        "name": "Hover Card",
+        "figma": {
+          "componentSet": "Hover Card",
+          "nodeId": "1962:14383",
+          "page": "Hover Card •"
+        },
+        "code": {
+          "file": "src/components/ui/hover-card.tsx",
+          "export": "HoverCardContent"
+        },
+        "props": {},
+        "level": "library"
+      },
+      {
+        "name": "Dropdown Menu",
+        "figma": {
+          "componentSet": "Dropdown Menu - Nova",
+          "nodeId": "1953:21264",
+          "page": "Dropdown Menu •"
+        },
+        "code": {
+          "file": "src/components/ui/dropdown-menu.tsx",
+          "export": "DropdownMenuContent"
+        },
+        "props": {},
+        "level": "library",
+        "figmaOnly": {
+          "Spacing": "example layouts of the menu content",
+          "Style": "example layouts of the menu content"
+        }
+      },
+      {
+        "name": "Context Menu",
+        "figma": {
+          "componentSet": "Dropdown Menu - Nova",
+          "nodeId": "1953:21264",
+          "page": "Dropdown Menu •"
+        },
+        "code": {
+          "file": "src/components/ui/context-menu.tsx",
+          "export": "ContextMenuContent"
+        },
+        "props": {},
+        "level": "library",
+        "figmaOnly": {
+          "note": "the kit has no Context Menu; it shares the Dropdown Menu's panel and items"
+        }
+      },
+      {
+        "name": "Menubar",
+        "figma": {
+          "componentSet": "Menubar - Nova",
+          "nodeId": "2047:14217",
+          "page": "Menubar •"
+        },
+        "code": {
+          "file": "src/components/ui/menubar.tsx",
+          "export": "Menubar"
+        },
+        "props": {},
+        "level": "library"
+      },
+      {
+        "name": "Navigation Menu",
+        "figma": {
+          "componentSet": "Navigation Menu - Nova",
+          "nodeId": "2078:525",
+          "page": "Navigation Menu •"
+        },
+        "code": {
+          "file": "src/components/ui/navigation-menu.tsx",
+          "export": "NavigationMenu"
+        },
+        "props": {},
+        "level": "library"
+      },
+      {
+        "name": "Command",
+        "figma": {
+          "componentSet": "Command - Nova",
+          "nodeId": "1999:15000",
+          "page": "Command •"
+        },
+        "code": {
+          "file": "src/components/ui/command.tsx",
+          "export": "Command"
+        },
+        "props": {},
+        "level": "library"
+      },
+      {
+        "name": "Sonner",
+        "figma": {
+          "componentSet": "Sonner - Nova",
+          "nodeId": "2047:14542",
+          "page": "Sonner •"
+        },
+        "code": {
+          "file": "src/components/ui/sonner.tsx",
+          "export": "Toaster"
+        },
+        "props": {},
+        "level": "library",
+        "figmaOnly": {
+          "Type": "toast.success / error / ... calls",
+          "Stack": "Sonner stacks toasts itself",
+          "Order": "Sonner stacks toasts itself"
+        },
+        "skipRadius": "radius is passed to Sonner as --border-radius: var(--radius)"
+      },
+      {
+        "name": "LogoMark",
+        "figma": {
+          "componentSet": "Symbol",
+          "nodeId": "5083:22",
+          "page": "Brand (style-bender)"
+        },
+        "code": {
+          "file": "src/components/ui/logo.tsx",
+          "export": "LogoMark"
+        },
+        "props": {},
+        "level": "brand",
+        "skipRadius": "the symbol tile is a path from the Claude Design SVG (rx 15 of 64), not a radius token"
+      },
+      {
+        "name": "Logo",
+        "figma": {
+          "componentSet": "Logo",
+          "nodeId": "5083:23",
+          "page": "Brand (style-bender)"
+        },
+        "code": {
+          "file": "src/components/ui/logo.tsx",
+          "export": "Logo"
+        },
+        "props": {},
+        "level": "brand",
+        "skipRadius": "the symbol tile is a path from the Claude Design SVG (rx 15 of 64), not a radius token"
+      },
+      {
+        "name": "Field",
+        "figma": {
+          "componentSet": "Vertical Field - Nova",
+          "nodeId": "1953:20683",
+          "page": "Field •"
+        },
+        "code": {
+          "file": "src/components/ui/field.tsx",
+          "export": "Field"
+        },
+        "props": {},
+        "level": "library",
+        "figmaOnly": {
+          "Type": "the control inside the Field (Input, Select, Textarea, Checkbox, RadioGroup, Slider)",
+          "State": "Error = data-invalid on Field plus aria-invalid on the control, with a FieldError",
+          "Orientation": "this set is orientation=\"vertical\"; Horizontal Field - Nova is orientation=\"horizontal\""
+        },
+        "skipRadius": "a Field has no corners of its own; the rounded shape is the control inside it, checked as Input"
+      },
+      {
+        "name": "Field (horizontal)",
+        "figma": {
+          "componentSet": "Horizontal Field - Nova",
+          "nodeId": "1953:20777",
+          "page": "Field •"
+        },
+        "code": {
+          "file": "src/components/ui/field.tsx",
+          "export": "Field"
+        },
+        "props": {},
+        "level": "library",
+        "figmaOnly": {
+          "Type": "the control inside the Field",
+          "State": "Error = data-invalid on Field",
+          "Orientation": "orientation=\"horizontal\" (code also has \"responsive\")"
+        },
+        "skipRadius": "a Field has no corners of its own; the rounded shape is the control inside it, checked as Input"
+      },
+      {
+        "name": "Input OTP",
+        "figma": {
+          "componentSet": "Input OTP - Nova",
+          "nodeId": "1999:16048",
+          "page": "Input OTP •"
+        },
+        "code": {
+          "file": "src/components/ui/input-otp.tsx",
+          "export": "InputOTPSlot"
+        },
+        "props": {},
+        "level": "library",
+        "states": {
+          "figmaProperty": "State",
+          "values": {
+            "Empty": "rest",
+            "Placeholder": "rest (placeholder)",
+            "Value": "filled",
+            "Focus": "data-active",
+            "Error": "aria-invalid",
+            "Error Focus": "aria-invalid + data-active",
+            "Disabled": ":disabled"
+          }
+        },
+        "figmaOnly": {
+          "Position": "first / middle / last slot in an InputOTPGroup (outer corners rounded)",
+          "Size": "h-* / w-* classes on the slots; code has one size (Default)"
+        }
+      },
+      {
+        "name": "Combobox",
+        "figma": {
+          "componentSet": "Multi Combobox - Nova",
+          "nodeId": "1953:14105",
+          "page": "Select & Combobox •"
+        },
+        "code": {
+          "file": "src/components/ui/combobox.tsx",
+          "export": "ComboboxChips"
+        },
+        "props": {},
+        "level": "library",
+        "figmaOnly": {
+          "State": "Empty / Items = chips present; Focus = focus-within ring",
+          "Size": "one size in code (Default)"
+        },
+        "$note": "Single-value Combobox shares the Select & Combobox - Nova set with Select"
+      },
+      {
+        "name": "Combobox Chip",
+        "figma": {
+          "componentSet": "Multi Combobox Tag",
+          "nodeId": "1953:14176",
+          "page": "Select & Combobox •"
+        },
+        "code": {
+          "file": "src/components/ui/combobox.tsx",
+          "export": "ComboboxChip"
+        },
+        "props": {},
+        "level": "library",
+        "figmaOnly": {
+          "State": "Hover = hover: classes"
+        },
+        "codeRadius": {
+          "token": "--radius-sm",
+          "from": "rounded-sm"
+        }
+      },
+      {
+        "name": "Native Select",
+        "figma": {
+          "componentSet": "Select & Combobox - Nova",
+          "nodeId": "1953:13582",
+          "page": "Select & Combobox •"
+        },
+        "code": {
+          "file": "src/components/ui/native-select.tsx",
+          "export": "NativeSelect"
+        },
+        "props": {
+          "size": {
+            "figmaProperty": "Size",
+            "kind": "prop",
+            "checkValues": true,
+            "values": {
+              "Default": "default",
+              "Small": "sm"
+            },
+            "figmaOnlyValues": [
+              "Large",
+              "Extra small"
+            ]
+          }
+        },
+        "level": "library",
+        "figmaOnly": {
+          "note": "the kit has no native select; it looks like the Select trigger",
+          "State": "browser states: :focus-visible, aria-invalid, :disabled"
+        }
+      },
+      {
+        "name": "Calendar",
+        "figma": {
+          "componentSet": "Calendar - Nova",
+          "nodeId": "1999:6911",
+          "page": "Date Picker & Calendar •"
+        },
+        "code": {
+          "file": "src/components/ui/calendar.tsx",
+          "export": "Calendar"
+        },
+        "props": {},
+        "level": "library",
+        "figmaOnly": {
+          "Months": "numberOfMonths={1|2|3}"
+        },
+        "codeRadius": {
+          "token": "--radius-md",
+          "from": "[--cell-radius:var(--radius-md)]"
+        }
+      },
+      {
+        "name": "Date Picker",
+        "figma": {
+          "componentSet": "Date Picker - Nova",
+          "nodeId": "1999:6891",
+          "page": "Date Picker & Calendar •"
+        },
+        "code": {
+          "file": "src/components/ui/calendar.tsx",
+          "export": "Calendar"
+        },
+        "props": {},
+        "level": "library",
+        "figmaOnly": {
+          "State": "Placeholder / Value / Focus of the trigger Button; a pattern of Popover + Button + Calendar, no own file"
+        },
+        "skipRadius": "a composition: the trigger is an outline Button, already checked as Button"
+      },
+      {
+        "name": "Input Group",
+        "figma": {
+          "componentSet": "Input - Nova",
+          "nodeId": "1953:18886",
+          "page": "Input & Input Group •"
+        },
+        "code": {
+          "file": "src/components/ui/input-group.tsx",
+          "export": "InputGroup"
+        },
+        "props": {},
+        "level": "library",
+        "figmaOnly": {
+          "Position": "Left / Middle / Right = an Input inside a group with addons",
+          "Size": "one size in code",
+          "State": "same states as Input"
+        }
+      },
+      {
+        "name": "Item",
+        "figma": {
+          "componentSet": "Item - Nova",
+          "nodeId": "1999:10197",
+          "page": "Item •"
+        },
+        "code": {
+          "file": "src/components/ui/item.tsx",
+          "export": "Item"
+        },
+        "props": {
+          "variant": {
+            "figmaProperty": "Variant",
+            "values": {
+              "Default": "default",
+              "Outline": "outline",
+              "Muted": "muted"
+            }
+          },
+          "size": {
+            "figmaProperty": "Size",
+            "values": {
+              "Default": "default",
+              "Small": "sm",
+              "Extra Small": "xs"
+            }
+          }
+        },
+        "level": "library",
+        "figmaOnly": {
+          "Interaction": "None = a <div>; Default / Hover = rendered as a link or button (render prop), hover: classes"
+        }
+      },
+      {
+        "name": "Empty",
+        "figma": {
+          "componentSet": "Empty - Nova",
+          "nodeId": "1999:15672",
+          "page": "Empty •"
+        },
+        "code": {
+          "file": "src/components/ui/empty.tsx",
+          "export": "Empty"
+        },
+        "props": {},
+        "level": "library",
+        "figmaOnly": {
+          "Variant": "Default = no border; Outline = className=\"border\"; Outline dashed = \"border border-dashed\"; Background = \"bg-muted\""
+        }
+      },
+      {
+        "name": "Scroll Area",
+        "figma": {
+          "componentSet": "Scrollbar",
+          "nodeId": "1953:14936",
+          "page": "Scroll Area"
+        },
+        "code": {
+          "file": "src/components/ui/scroll-area.tsx",
+          "export": "ScrollBar"
+        },
+        "props": {
+          "orientation": {
+            "figmaProperty": "Type",
+            "kind": "prop",
+            "values": {
+              "Vertical": "vertical",
+              "Horizontal": "horizontal"
+            },
+            "note": "values come from Base UI ScrollArea.Scrollbar.Props (\"vertical\" | \"horizontal\"), not written in our file"
+          }
+        },
+        "level": "library"
+      },
+      {
+        "name": "Resizable",
+        "figma": {
+          "componentSet": "Resizable",
+          "nodeId": "1953:15016",
+          "page": "Resizable"
+        },
+        "code": {
+          "file": "src/components/ui/resizable.tsx",
+          "export": "ResizableHandle"
+        },
+        "props": {},
+        "level": "library",
+        "figmaOnly": {
+          "Orientation": "the handle follows the group: ResizablePanelGroup orientation=\"horizontal\" gives the vertical grip and the other way round; withHandle shows the grip"
+        }
+      },
+      {
+        "name": "Carousel",
+        "figma": {
+          "componentSet": "Carousel (Horizontal) - Nova",
+          "nodeId": "1953:26893",
+          "page": "Carousel •"
+        },
+        "code": {
+          "file": "src/components/ui/carousel.tsx",
+          "export": "Carousel"
+        },
+        "props": {},
+        "level": "library",
+        "figmaOnly": {
+          "Slides": "number of CarouselItem children",
+          "Orientation": "this set is orientation=\"horizontal\""
+        }
+      },
+      {
+        "name": "Carousel (vertical)",
+        "figma": {
+          "componentSet": "Carousel (Vertical) - Nova",
+          "nodeId": "1953:26931",
+          "page": "Carousel •"
+        },
+        "code": {
+          "file": "src/components/ui/carousel.tsx",
+          "export": "Carousel"
+        },
+        "props": {},
+        "level": "library",
+        "figmaOnly": {
+          "Slides": "number of CarouselItem children",
+          "Orientation": "this set is orientation=\"vertical\""
+        }
+      },
+      {
+        "name": "Sidebar Menu Button",
+        "figma": {
+          "componentSet": "Sidebar Item / Expanded / 1st Level - Nova",
+          "nodeId": "2047:13506",
+          "page": "Sidebar •"
+        },
+        "code": {
+          "file": "src/components/ui/sidebar.tsx",
+          "export": "SidebarMenuButton"
+        },
+        "props": {},
+        "level": "library",
+        "states": {
+          "figmaProperty": "State",
+          "values": {
+            "Default": "rest",
+            "Active": "isActive (data-active)",
+            "Focus": ":focus-visible",
+            "Active Focus": "isActive + :focus-visible"
+          }
+        },
+        "figmaOnly": {
+          "Type": "Base = SidebarMenuButton; Expanded / Collapsed = inside a Collapsible with a chevron; Dropdown = inside a DropdownMenu; Badge = with SidebarMenuBadge"
+        },
+        "codeRadius": {
+          "token": "--radius-md",
+          "from": "overflow-hidden rounded-md p-2"
+        }
+      },
+      {
+        "name": "Sidebar Menu Button (collapsed)",
+        "figma": {
+          "componentSet": "Sidebar Item / Collapsed - Nova",
+          "nodeId": "2047:13456",
+          "page": "Sidebar •"
+        },
+        "code": {
+          "file": "src/components/ui/sidebar.tsx",
+          "export": "SidebarMenuButton"
+        },
+        "props": {
+          "isActive": {
+            "figmaProperty": "State",
+            "kind": "boolean",
+            "values": {
+              "Active": true,
+              "Regular": false
+            }
+          }
+        },
+        "level": "library",
+        "figmaOnly": {
+          "note": "the same button when the Sidebar has collapsible=\"icon\" and is collapsed"
+        },
+        "codeRadius": {
+          "token": "--radius-md",
+          "from": "overflow-hidden rounded-md p-2"
+        }
+      },
+      {
+        "name": "Sidebar Menu Sub Button",
+        "figma": {
+          "componentSet": "Sidebar Item / Expanded / 2nd Level - Nova",
+          "nodeId": "2047:13613",
+          "page": "Sidebar •"
+        },
+        "code": {
+          "file": "src/components/ui/sidebar.tsx",
+          "export": "SidebarMenuSubButton"
+        },
+        "props": {
+          "isActive": {
+            "figmaProperty": "State",
+            "kind": "boolean",
+            "values": {
+              "Active": true,
+              "Default": false
+            }
+          }
+        },
+        "level": "library",
+        "codeRadius": {
+          "token": "--radius-md",
+          "from": "rounded-md"
+        }
+      },
+      {
+        "name": "Sidebar Group Label",
+        "figma": {
+          "componentSet": "Sidebar Group Label - Nova",
+          "nodeId": "2047:13640",
+          "page": "Sidebar •"
+        },
+        "code": {
+          "file": "src/components/ui/sidebar.tsx",
+          "export": "SidebarGroupLabel"
+        },
+        "props": {},
+        "level": "library",
+        "figmaOnly": {
+          "Type": "Base = SidebarGroupLabel; Action = with SidebarGroupAction; Expanded / Collapsed = label as a CollapsibleTrigger"
+        },
+        "codeRadius": {
+          "token": "--radius-md",
+          "from": "rounded-md"
+        }
+      },
+      {
+        "name": "Sidebar Menu Badge",
+        "figma": {
+          "componentSet": "Sidebar Badge - Nova",
+          "nodeId": "2047:13471",
+          "page": "Sidebar •"
+        },
+        "code": {
+          "file": "src/components/ui/sidebar.tsx",
+          "export": "SidebarMenuBadge"
+        },
+        "props": {},
+        "level": "library",
+        "figmaOnly": {
+          "Variant": "Primary = className with bg-primary text-primary-foreground"
+        },
+        "codeRadius": {
+          "token": "--radius-md",
+          "from": "rounded-md"
+        }
+      },
+      {
+        "name": "Sidebar",
+        "figma": {
+          "componentSet": "Sidebar - With Children",
+          "nodeId": "2351:3044",
+          "page": "Sidebar •"
+        },
+        "code": {
+          "file": "src/components/ui/sidebar.tsx",
+          "export": "Sidebar"
+        },
+        "props": {},
+        "level": "library",
+        "skipRadius": "a layout of SidebarMenuButtons, each checked above"
+      },
+      {
+        "name": "Sidebar (collapsed)",
+        "figma": {
+          "componentSet": "Sidebar - Collapsed",
+          "nodeId": "2351:3048",
+          "page": "Sidebar •"
+        },
+        "code": {
+          "file": "src/components/ui/sidebar.tsx",
+          "export": "Sidebar"
+        },
+        "props": {},
+        "level": "library",
+        "figmaOnly": {
+          "note": "collapsible=\"icon\", collapsed"
+        },
+        "skipRadius": "a layout of collapsed SidebarMenuButtons, checked above"
+      },
+      {
+        "name": "Chart",
+        "figma": {
+          "componentSet": "Chart",
+          "nodeId": "1999:12790",
+          "page": "Chart"
+        },
+        "code": {
+          "file": "src/components/ui/chart.tsx",
+          "export": "ChartContainer"
+        },
+        "props": {},
+        "level": "library",
+        "skipRadius": "the rounded shape is the kit's placeholder; the chart itself is square"
+      },
+      {
+        "name": "Chart Legend",
+        "figma": {
+          "componentSet": "Legend",
+          "nodeId": "1999:13022",
+          "page": "Chart"
+        },
+        "code": {
+          "file": "src/components/ui/chart.tsx",
+          "export": "ChartLegendContent"
+        },
+        "props": {},
+        "level": "library",
+        "codeRadius": {
+          "token": "--radius-2xs",
+          "from": "rounded-2xs"
+        }
+      },
+      {
+        "name": "Line Chart",
+        "figma": {
+          "componentSet": "Line chart",
+          "nodeId": "1999:13135",
+          "page": "Chart"
+        },
+        "code": {
+          "file": "src/components/ui/chart.tsx",
+          "export": "ChartContainer"
+        },
+        "props": {},
+        "level": "library",
+        "figmaOnly": {
+          "Type": "Recharts <LineChart> setups: type=\"natural\" | \"linear\" | \"step\" on <Line>, several <Line>s for Multiple"
+        },
+        "skipRadius": "square in Figma; the chart sits inside a Card"
+      },
+      {
+        "name": "Area Chart",
+        "figma": {
+          "componentSet": "Area chart",
+          "nodeId": "1999:13167",
+          "page": "Chart"
+        },
+        "code": {
+          "file": "src/components/ui/chart.tsx",
+          "export": "ChartContainer"
+        },
+        "props": {},
+        "level": "library",
+        "figmaOnly": {
+          "Type": "Recharts <AreaChart> setups: type on <Area>, stackId for Stacked"
+        },
+        "skipRadius": "square in Figma; the chart sits inside a Card"
+      },
+      {
+        "name": "Bar Chart",
+        "figma": {
+          "componentSet": "Bar chart",
+          "nodeId": "1999:13206",
+          "page": "Chart"
+        },
+        "code": {
+          "file": "src/components/ui/chart.tsx",
+          "export": "ChartContainer"
+        },
+        "props": {},
+        "level": "library",
+        "figmaOnly": {
+          "Type": "Recharts <BarChart> setups: layout=\"vertical\" for Horizontal, several <Bar>s or stackId"
+        },
+        "skipRadius": "square in Figma; the chart sits inside a Card"
+      },
+      {
+        "name": "Data Table Header",
+        "figma": {
+          "componentSet": "Table Header",
+          "nodeId": "1999:9214",
+          "page": "Data Table"
+        },
+        "code": {
+          "file": "src/components/ui/table.tsx",
+          "export": "TableHead"
+        },
+        "props": {},
+        "level": "library",
+        "figmaOnly": {
+          "Content": "Text / Sortable (a ghost Button with a sort icon) / Checkbox / Empty",
+          "Alignment": "text-right class",
+          "State": "Hover / Active = row hover and data-state=selected"
+        }
+      },
+      {
+        "name": "Data Table Cell",
+        "figma": {
+          "componentSet": "Table Cell",
+          "nodeId": "1999:9349",
+          "page": "Data Table"
+        },
+        "code": {
+          "file": "src/components/ui/table.tsx",
+          "export": "TableCell"
+        },
+        "props": {},
+        "level": "library",
+        "figmaOnly": {
+          "Content": "Text (1 or 2 lines) / Checkbox / Slot (any content)",
+          "Alignment": "text-right class",
+          "State": "Hover / Active = row hover and data-state=selected"
+        }
+      }
+    ]
+  }
 }
